@@ -1,0 +1,11 @@
+source,PharmKG,Bioteque ,PrimeKG,HetioNet,SPOKE,GNBR,NCATS Gard,Monarch KG,clinical KG,RTX-KG2,HRA-KG,Petagraph,Genomic KG,Robo Kop,DrugMechDB,EmBiology,PheKnowLater
+GO,0,1,1,1,1,0,0,1,1,1,0,0,1,1,1,0,1
+HPO,0,0,1,0,0,0,1,1,1,1,0,1,0,1,1,0,1
+Cell Ontology (CL),0,0,0,0,1,0,1,1,0,1,1,0,1,0,1,0,1
+Uberon,0,0,0,1,1,0,0,1,0,1,1,0,1,0,1,0,1
+ChEBI,0,1,0,0,0,0,1,1,0,1,0,0,0,1,1,0,1
+MeSH,0,0,0,1,1,0,1,0,0,1,0,0,0,0,1,0,1
+MONDO,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,0,1
+DO,0,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0
+Protein Ontology,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1
+Relation Ontology (RO),0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1

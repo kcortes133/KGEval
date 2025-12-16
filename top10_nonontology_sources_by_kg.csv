@@ -1,0 +1,11 @@
+source,PharmKG,Bioteque ,PrimeKG,HetioNet,SPOKE,GNBR,NCATS Gard,Monarch KG,clinical KG,RTX-KG2,HRA-KG,Petagraph,Genomic KG,Robo Kop,DrugMechDB,EmBiology,PheKnowLater
+DrugBank,1,1,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0
+Reactome,0,1,1,1,1,0,0,1,0,1,0,0,0,1,1,0,1
+UniProt,0,0,0,0,1,0,0,1,1,1,0,1,0,1,1,0,1
+DisGenNET,0,1,1,1,1,0,0,0,1,1,0,0,0,1,0,0,1
+SIDER,1,1,1,1,1,0,0,0,1,0,0,0,0,1,0,0,0
+STRING,0,1,0,0,1,0,0,1,1,0,0,1,0,1,0,0,1
+DrugCentral,0,1,1,1,1,0,0,0,0,1,0,0,0,1,1,0,0
+Human gene nomenclature committee (HGNC),0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,0,1
+OMIM,1,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0
+Human Protien Atlas,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1
