@@ -42,11 +42,11 @@ import pandas as pd
 # File paths
 # -----------------------------
 # CSV listing all non-ontology data sources (one comma-separated list).
-NON_ONTOLOGY_FILE = "nonOntologySources.csv"
+NON_ONTOLOGY_FILE = "../data/nonOntologySources.csv"
 # CSV listing all ontology data sources (one comma-separated list).
-ONTOLOGY_FILE = "ontologies.csv"
+ONTOLOGY_FILE = "../data/ontologies.csv"
 # KG x source presence/absence matrix (rows = sources, columns = KGs).
-SOURCES_FILE = "sources.csv"
+SOURCES_FILE = "../data/Sources.csv"
 
 # -----------------------------
 # Load source lists (FIXED)

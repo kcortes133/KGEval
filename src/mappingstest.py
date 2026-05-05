@@ -129,9 +129,9 @@ def plot_heatmap(matrix, out_svg, ylabel):
 # EDGE TYPE HEATMAP
 # -----------------------------
 # Native edge-type presence matrix (rows = native edge labels, cols = KGs).
-EDGE_TYPE_FILE = "Edge Types.csv"
+EDGE_TYPE_FILE = "../data/Edge Types.csv"
 # Lookup table mapping each native edge label onto a Biolink predicate.
-EDGE_MAP_FILE = "biolink_edge_mappings.csv"
+EDGE_MAP_FILE = "../data/biolink_edge_mappings.csv"
 
 edge_df, kg_columns = load_presence_matrix(EDGE_TYPE_FILE)
 
@@ -169,9 +169,9 @@ plot_heatmap(
 # NODE TYPE HEATMAP
 # -----------------------------
 # Native node-type presence matrix.
-NODE_TYPE_FILE = "Node Types.csv"
+NODE_TYPE_FILE = "../data/Node Types.csv"
 # Lookup table mapping each native node label onto a Biolink class.
-NODE_MAP_FILE = "biolink_node_mappings.csv"
+NODE_MAP_FILE = "../data/biolink_node_mappings.csv"
 
 node_df, _ = load_presence_matrix(NODE_TYPE_FILE)
 

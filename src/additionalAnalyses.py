@@ -58,10 +58,10 @@ from scipy.cluster.hierarchy import linkage, dendrogram
 # Load data
 # -----------------------------
 # Per-KG source counts produced by ``sources.py``.
-kg_sources = pd.read_csv("kg_source_counts.csv")
+kg_sources = pd.read_csv("../data/kg_source_counts.csv")
 # Biolink edge-coverage matrix (rows = Biolink predicates, columns = KGs).
 biolink_edges = pd.read_csv(
-    "kg_biolink_edge_matrix.csv",
+    "../data/kg_biolink_edge_matrix.csv",
     index_col=0
 )
 
@@ -193,8 +193,8 @@ from scipy.cluster.hierarchy import linkage, dendrogram
 # -----------------------------
 # Load data
 # -----------------------------
-kg_sources = pd.read_csv("kg_source_counts.csv")
-biolink_edges = pd.read_csv("kg_biolink_edge_matrix.csv", index_col=0)
+kg_sources = pd.read_csv("../data/kg_source_counts.csv")
+biolink_edges = pd.read_csv("../data/kg_biolink_edge_matrix.csv", index_col=0)
 
 # Normalize KG names: strip leading/trailing whitespace so the .map() call
 # below joins KG identifiers correctly between the two tables.
