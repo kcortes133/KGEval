@@ -1,0 +1,97 @@
+,PharmKG,Bioteque ,PrimeKG,HetioNet,SPOKE,GNBR,NCATS Gard,Monarch KG,clinical KG,RTX-KG2,HRA-KG,Petagraph,Genomic KB,Robo Kop,DrugMechDB,EmBiology,PheKnowLator
+EDGE::biolink:affects,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0
+EDGE::biolink:ameliorates,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+EDGE::biolink:associated_with,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:biomarker_for,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+EDGE::biolink:causes,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:contributes_to,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,0
+EDGE::biolink:correlated_with,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:derives_from,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1
+EDGE::biolink:develops_from,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:diagnoses,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:enables,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+EDGE::biolink:expressed_in,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:has_biomarker,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+EDGE::biolink:has_input,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:has_metabolite,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:has_output,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:has_part,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:has_participant,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1
+EDGE::biolink:has_phenotype,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1
+EDGE::biolink:has_side_effect,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+EDGE::biolink:has_variant,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+EDGE::biolink:homologous_to,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:in_taxon,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:interacts_with,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,1
+EDGE::biolink:located_in,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,1
+EDGE::biolink:mentions,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+EDGE::biolink:model_of,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+EDGE::biolink:occurs_in,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+EDGE::biolink:orthologous_to,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+EDGE::biolink:overlaps,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:part_of,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:participates_in,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+EDGE::biolink:precedes,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+EDGE::biolink:predisposes,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+EDGE::biolink:prevents,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+EDGE::biolink:produces,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:regulates,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:related_to,0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:same_as,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+EDGE::biolink:similar_to,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+EDGE::biolink:subclass_of,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,0,0
+EDGE::biolink:superclass_of,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+EDGE::biolink:targets,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+EDGE::biolink:transcribed_into,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+EDGE::biolink:translated_into,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+EDGE::biolink:transports,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+EDGE::biolink:treats,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0
+EDGE::biolink:variant_of,0,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0
+NODE::activity,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+NODE::agent,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+NODE::anatomical entity,0,1,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+NODE::behavioral feature,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+NODE::biological process,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+NODE::cell,0,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,1
+NODE::cellular component,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+NODE::chemical entity,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1
+NODE::chemical mixture,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+NODE::clinical attribute,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+NODE::clinical intervention,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+NODE::dataset,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+NODE::device,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+NODE::disease,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1
+NODE::drug,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NODE::environmental feature,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+NODE::environmental process,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+NODE::event,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+NODE::exposure,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NODE::food,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0
+NODE::gene,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,1
+NODE::gene family,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0
+NODE::genomic entity,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+NODE::genotype,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+NODE::geographic location,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+NODE::individual organism,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+NODE::information content entity,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0
+NODE::life stage,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+NODE::macromolecular complex,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+NODE::material sample,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+NODE::molecular modification,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+NODE::named thing,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+NODE::nucleic acid entity,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1
+NODE::organism taxon,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0
+NODE::organismal entity,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+NODE::pathway,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+NODE::phenomenon,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+NODE::phenotypic feature,0,0,1,1,1,0,1,1,1,1,1,0,0,1,1,0,1
+NODE::physiological process,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+NODE::polypeptide,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+NODE::population of individual organisms,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+NODE::protein,1,1,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1
+NODE::protein domain,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+NODE::publication,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+NODE::regulatory region,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+NODE::sequence variant,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1
+NODE::small molecule,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0
+NODE::study,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0

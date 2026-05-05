@@ -1,0 +1,49 @@
+biolink,PharmKG,Bioteque ,PrimeKG,HetioNet,SPOKE,GNBR,NCATS Gard,Monarch KG,clinical KG,RTX-KG2,HRA-KG,Petagraph,Genomic KB,Robo Kop,DrugMechDB,EmBiology,PheKnowLator
+activity,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+agent,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+anatomical entity,0,1,0,0,0,0,1,1,1,1,1,0,1,1,1,0,1
+behavioral feature,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+biological process,0,0,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+cell,0,1,0,0,1,0,1,1,0,1,1,0,1,1,1,0,1
+cellular component,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+chemical entity,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1
+chemical mixture,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+clinical attribute,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
+clinical intervention,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+dataset,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+device,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+disease,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,0,1
+drug,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+environmental feature,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+environmental process,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+event,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+exposure,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+food,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0
+gene,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,1
+gene family,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,0
+genomic entity,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+genotype,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+geographic location,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+individual organism,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+information content entity,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0
+life stage,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
+macromolecular complex,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+material sample,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+molecular modification,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+named thing,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0
+nucleic acid entity,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,1
+organism taxon,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0
+organismal entity,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+pathway,0,1,1,1,1,0,0,1,1,1,0,0,0,1,1,0,1
+phenomenon,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+phenotypic feature,0,0,1,1,1,0,1,1,1,1,1,0,0,1,1,0,1
+physiological process,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+polypeptide,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+population of individual organisms,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0
+protein,1,1,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1
+protein domain,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+publication,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0
+regulatory region,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0
+sequence variant,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1
+small molecule,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0
+study,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0

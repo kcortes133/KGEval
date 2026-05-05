@@ -1,0 +1,128 @@
+Unstructured Label (Node-Type),Biolink Class
+Activity,activity
+Agent,agent
+Analytical Sample,material sample
+Anatomy/Anatomical regions/Anatomical Structure,anatomical entity
+Anatomical Entity,anatomical entity
+Anatomy Cell Type,cell
+Antibody,protein
+Abtibody Panel,reagent targeted gene
+Behavior,behavioral feature
+Behavioral Feature,behavioral feature
+Biological Activity,activity
+Biological Entity,named thing
+Biological Processes,biological process
+Biological Sample,material sample
+Biomarker,phenotypic feature
+Cells,cell
+Cell Lines,cell
+Cell types,cell
+Cellular Components,cellular component
+Cell Summary,cell
+Chemicals / Chemical Entity/ Drugs,chemical entity
+Chemical Mixture,chemical entity
+Chromosome,nucleic acid entity
+Clinical Attribute,clinical attribute
+Clinical Intervention,clinical intervention
+Clinical Variable,clinical attribute
+Clinically Relevant Variable,clinical attribute
+Code,information content entity
+Cohort,population of individual organisms
+Collision Summary,event
+Complex,macromolecular complex
+Compounds,chemical entity
+Concept,information content entity
+Corridor,geographic location
+Dataset,dataset
+Definition,information content entity
+Devices,device
+Diseases,disease
+Domains,protein domain
+Donor,individual organism
+Enhancer,regulatory region
+Environmental Features,environmental feature
+Environmental Processes,environmental process
+Enzymatic Activity,activity
+Epigenomic Features,molecular modification
+Event,event
+Exon,nucleic acid entity
+Experiment,study
+Exposures,exposure
+Extraction Site (Spatial Entity),anatomical entity
+Food,food
+FTU Illustration,information content entity
+FTU Illustration Node,information content entity
+Functional Regions,regulatory region
+Genes,gene
+Gene Family,gene family
+Genomic Entity,genomic entity
+Genotype,genotype
+Geographical Location,geographic location
+Gross Anatomical Structure,anatomical entity
+GWAS Study,study
+Information Content Entity,information content entity
+Information Resource,information content entity
+Insulator,regulatory region
+Known Variant,sequence variant
+Landmark,geographic location
+Life Stage,life stage
+Macro Molecular Complex,macromolecular complex
+Material Sample,material sample
+Metabolite,small molecule
+MicroRNA,nucleic acid entity
+Millitome Extraction Site,anatomical entity
+Modification,molecular modification
+Modified Protein,protein
+Molecular Activity,activity
+Molecular Entity,named thing
+Molecular Functions,activity
+Molecular Mixture,chemical mixture
+Named Thing,named thing
+Non Coding RNA Product,nucleic acid entity
+Nucleic Acid Entity,nucleic acid entity
+Nutrients,small molecule
+Organisms,organismal entity
+Organism Taxon,organism taxon
+Organismal Entity,organismal entity
+Orthology,gene family
+Pathological Process,pathological process
+Pathways,pathway
+Peptides,polypeptide
+Perturbagens,drug
+Pharmacologic Classes,chemical entity
+Phenomenon,phenomenon
+Phenotypes/ Effects/ Phenotypic Feature,phenotypic feature
+Physical Entity,named thing
+Physiological Processes,physiological process
+Polypeptide,polypeptide
+Population of Individual Organisms,population of individual organisms
+Procedure,clinical intervention
+Project,study
+Promoter,regulatory region
+Proteins,protein
+Protein Domains,protein domain
+Protein Family,gene family
+Protein Structure,protein
+Publications,publication
+Reactions,biological process
+Reference Organ,anatomical entity
+Reference Organ Part,anatomical entity
+RNA Product,nucleic acid entity
+Semantic,information content entity
+Sequence Variant,sequence variant
+Side Effects,phenotypic feature
+Small Molecules,small molecule
+Somatic Mutation,sequence variant
+Subject,individual organism
+Super Enhancer,regulatory region
+Symptoms,phenotypic feature
+Term,information content entity
+Tissues,anatomical entity
+Tssue Block (Sample),material sample
+Tissue Section (Sample),material sample
+Transcript,nucleic acid entity
+Treatment,clinical intervention
+User,agent
+Variants,sequence variant
+Vitamins,small molecule
+3D Structures,protein domain

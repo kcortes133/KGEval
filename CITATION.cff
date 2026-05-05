@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the associated paper."
+title: "KGEval: Evaluating Biomedical Knowledge Graphs"
+abstract: >-
+  Companion code and curated data for evaluating the schema coverage and
+  source composition of widely-used biomedical knowledge graphs against the
+  Biolink Model.
+authors:
+  - family-names: "Cortes"
+    given-names: "Katherina G."
+repository-code: "https://github.com/kcortes133/KGEval"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Improving Biomedical Knowledge Graph Quality: A Community Approach"
+  authors:
+    - family-names: "Cortes"
+      given-names: "Katherina G."
+    - family-names: "Sundar"
+      given-names: "Shilpa"
+  year: 2025
+  journal: "arXiv preprint"
+  number: "2508.21774"
+  url: "https://arxiv.org/abs/2508.21774"
