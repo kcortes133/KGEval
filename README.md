@@ -17,8 +17,9 @@ The analyses cover three angles:
    supports (clustered heatmaps).
 2. **Source composition** — the mix of ontology vs. non-ontology data
    sources each KG draws on, and the most reused sources across KGs.
-3. **Cross-KG comparisons** — derived metrics (ontology ratio, Biolink edge
-   coverage, edge-type entropy) and KG clustering by source composition.
+3. **Cross-KG comparisons** — derived metrics (ontology ratio, Biolink
+   edge coverage, edge-type entropy) and KG clustering by source
+   composition.
 
 ## Surveyed knowledge graphs
 
@@ -32,34 +33,42 @@ RoboKop · DrugMechDB · EmBiology · PheKnowLator
 
 ```
 KGEval/
-├── README.md                         <- this file
-├── requirements.txt                  <- Python dependencies
-├── LICENSE                           <- MIT license
-├── CITATION.cff                      <- citation metadata
+├── README.md                                   <- this file
+├── requirements.txt                            <- Python dependencies
+├── LICENSE                                     <- MIT license
+├── CITATION.cff                                <- citation metadata
 │
-├── sources.py                        <- source-composition analysis
-├── mappingstest.py                   <- Biolink edge / node clustered heatmaps
-├── additionalAnalyses.py             <- cross-KG metrics + multi-panel figures
-├── clusterHeatMap.py                 <- clustermap layout sandbox
+├── src/                                        <- analysis scripts
+│   ├── sources.py                              <- source-composition analysis
+│   ├── mappingstest.py                         <- Biolink edge / node clustered heatmaps
+│   ├── additionalAnalyses.py                   <- cross-KG metrics + multi-panel figures
+│   └── clusterHeatMap.py                       <- clustermap layout sandbox
 │
-├── Edge Types.csv                    <- KG x native edge-type presence matrix
-├── Node Types.csv                    <- KG x native node-type presence matrix
-├── Sources.csv                       <- KG x source presence matrix
-├── biolink_edge_mappings.csv         <- native edge type → Biolink predicate
-├── biolink_node_mappings.csv         <- native node type → Biolink class
-├── nonOntologySources.csv            <- comma-separated list of non-ontology sources
-├── ontologies.csv                    <- comma-separated list of ontology sources
+├── inputs/                                     <- curated CSV inputs
+│   ├── Edge Types.csv                          <- KG × native edge-type presence matrix
+│   ├── Node Types.csv                          <- KG × native node-type presence matrix
+│   ├── Sources.csv                             <- KG × source presence matrix
+│   ├── biolink_edge_mappings.csv               <- native edge type → Biolink predicate
+│   ├── biolink_node_mappings.csv               <- native node type → Biolink class
+│   ├── nonOntologySources.csv                  <- comma-separated list of non-ontology sources
+│   └── ontologies.csv                          <- comma-separated list of ontology sources
 │
-├── kg_biolink_combined_matrix.csv    <- combined Biolink edge + node matrix
-├── kg_biolink_edge_matrix.csv        <- Biolink-edge matrix consumed by analyses
-├── kg_biolink_node_matrix.csv        <- Biolink-node matrix
-├── kg_edge_type_counts.csv           <- per-KG native edge-type counts
-├── kg_node_type_counts.csv           <- per-KG native node-type counts
-├── kg_source_counts.csv              <- per-KG source counts (output of sources.py)
-├── top10_ontology_sources_by_kg.csv  <- top 10 ontology sources, by KG (output)
-├── top10_nonontology_sources_by_kg.csv <- top 10 non-ontology sources (output)
+├── outputs/                                    <- generated CSVs
+│   ├── kg_biolink_combined_matrix.csv          <- combined Biolink edge + node matrix
+│   ├── kg_biolink_edge_matrix.csv              <- Biolink-edge matrix (consumed downstream)
+│   ├── kg_biolink_node_matrix.csv              <- Biolink-node matrix
+│   ├── kg_edge_type_counts.csv                 <- per-KG native edge-type counts
+│   ├── kg_node_type_counts.csv                 <- per-KG native node-type counts
+│   ├── kg_source_counts.csv                    <- per-KG source counts (output of sources.py)
+│   ├── top10_ontology_sources_by_kg.csv        <- top 10 ontology sources by KG
+│   └── top10_nonontology_sources_by_kg.csv     <- top 10 non-ontology sources by KG
 │
-└── *.svg                             <- generated figures
+└── figures/                                    <- generated SVG figures
+    ├── kg_biolink_edge_heatmap.svg
+    ├── kg_biolink_node_heatmap.svg
+    ├── kg_biolink_schema_heatmap.svg
+    ├── kg_source_semantics_multifigure.svg
+    └── kg_source_semantics_full.svg
 ```
 
 ## Installation
@@ -81,52 +90,66 @@ pip install -r requirements.txt
 
 ## Running the analyses
 
-The scripts are independent and can be run in any order, but the natural
-flow is:
+The scripts use relative paths (`../inputs/...`) and are designed to be
+run from the `src/` directory:
 
 ```bash
+cd src/
+
 # 1. Per-KG source composition + top-N source rankings
-#    Inputs : Sources.csv, ontologies.csv, nonOntologySources.csv
+#    Inputs : inputs/Sources.csv, inputs/ontologies.csv,
+#             inputs/nonOntologySources.csv
 #    Outputs: kg_source_counts.csv, top10_ontology_sources_by_kg.csv,
 #             top10_nonontology_sources_by_kg.csv
 python sources.py
 
-# 2. Clustered KG x Biolink heatmaps (edge types and node classes)
-#    Inputs : Edge Types.csv, Node Types.csv,
-#             biolink_edge_mappings.csv, biolink_node_mappings.csv
+# 2. Clustered KG × Biolink heatmaps (edge types and node classes)
+#    Inputs : inputs/Edge Types.csv, inputs/Node Types.csv,
+#             inputs/biolink_edge_mappings.csv,
+#             inputs/biolink_node_mappings.csv
 #    Outputs: kg_biolink_edge_heatmap.svg, kg_biolink_node_heatmap.svg
 python mappingstest.py
 
 # 3. Cross-KG metrics + multi-panel figures
 #    Inputs : kg_source_counts.csv, kg_biolink_edge_matrix.csv
-#    Outputs: kg_source_semantics_multifigure.svg, kg_source_semantics_full.svg
+#    Outputs: kg_source_semantics_multifigure.svg,
+#             kg_source_semantics_full.svg
 python additionalAnalyses.py
 ```
+
+The scripts are independent and can be run in any order, but the natural
+flow is `sources.py` → `mappingstest.py` → `additionalAnalyses.py`,
+since `additionalAnalyses.py` consumes `kg_source_counts.csv` (produced
+by `sources.py`) and `kg_biolink_edge_matrix.csv`.
 
 `clusterHeatMap.py` is a layout playground (uses the seaborn `iris` demo
 dataset) and is not part of the production figure pipeline.
 
-## Inputs (manually curated)
+## Inputs (`inputs/`)
 
 | File | Description |
 |------|-------------|
 | `Edge Types.csv` | KG × native edge-type presence/absence matrix (TRUE/FALSE) |
 | `Node Types.csv` | KG × native node-type presence/absence matrix (TRUE/FALSE) |
 | `Sources.csv` | KG × data-source presence/absence matrix |
-| `biolink_edge_mappings.csv` | Hand-curated mapping of native edge labels → Biolink predicates |
-| `biolink_node_mappings.csv` | Hand-curated mapping of native node labels → Biolink classes |
+| `biolink_edge_mappings.csv` | Chat-GPT curated mapping of native edge labels → Biolink predicates |
+| `biolink_node_mappings.csv` | Chat-GPT curated mapping of native node labels → Biolink classes |
 | `ontologies.csv` | Comma-separated list of source names treated as ontologies |
 | `nonOntologySources.csv` | Comma-separated list of source names treated as non-ontologies |
 
 ## Outputs
 
-Generated CSVs:
+Generated CSVs (`outputs/`):
 
 - `kg_source_counts.csv` — per-KG ontology / non-ontology / total source counts
 - `top10_ontology_sources_by_kg.csv` — most reused ontology sources across KGs
 - `top10_nonontology_sources_by_kg.csv` — most reused non-ontology sources across KGs
+- `kg_biolink_edge_matrix.csv` — Biolink edge-type matrix (rows = predicates, cols = KGs)
+- `kg_biolink_node_matrix.csv` — Biolink node-class matrix
+- `kg_biolink_combined_matrix.csv` — combined edge + node Biolink matrix
+- `kg_edge_type_counts.csv` / `kg_node_type_counts.csv` — per-KG native edge/node type counts
 
-Generated figures:
+Generated figures (`figures/`):
 
 - `kg_biolink_edge_heatmap.svg` — KG × Biolink edge-type clustered heatmap
 - `kg_biolink_node_heatmap.svg` — KG × Biolink node-class clustered heatmap
@@ -168,4 +191,3 @@ If you use this code or the curated mappings, please cite the paper:
 
 A `CITATION.cff` file is also provided for GitHub's "Cite this repository"
 button.
-
