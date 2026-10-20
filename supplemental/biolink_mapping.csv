@@ -1,0 +1,474 @@
+Type,Native label,KGs,Original (ChatGPT) term,Current term,Outcome,Rule applied
+node,3D Structures,GenomicKB,protein domain,protein domain,agree,node type
+node,Activity,"RTX-KG2,ROBOKOP",activity,activity,agree,node type
+node,Agent,RTX-KG2,agent,agent,agree,node type
+node,Analytical Sample,Clinical KG,material sample,material sample,agree,node type
+node,Anatomical Entity,"Monarch KG,RTX-KG2,ROBOKOP,PheKnowLator",anatomical entity,anatomical entity,agree,node type
+node,Anatomy Cell Type,SPOKE,cell,cell,agree,node type
+node,Anatomy/ Anatomical regions/ Anatomical Structure,"PrimeKG,Hetionet,SPOKE,HRA KG",,anatomical entity,new mapping,node type
+node,Antibody,HRA KG,protein,protein,agree,node type
+node,Antibody Panel,HRA KG,,,unmapped in both,unresolved
+node,Behavior,RTX-KG2,behavioral feature,behavioral feature,agree,node type
+node,Behavioral Feature,RTX-KG2,behavioral feature,behavioral feature,agree,node type
+node,Biological Activity,RTX-KG2,activity,activity,agree,node type
+node,Biological Entity,RTX-KG2,named thing,named thing,agree,node type
+node,Biological Processes,"PrimeKG,Hetionet,SPOKE,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",biological process,biological process,agree,node type
+node,Biological Sample,Clinical KG,material sample,material sample,agree,node type
+node,Biomarker,HRA KG,phenotypic feature,phenotypic feature,agree,node type
+node,Catalysts,PheKnowLator,,chemical entity,new mapping,node type
+node,Cell Lines,"RTX-KG2,GenomicKB,PheKnowLator",cell,cell,agree,node type
+node,Cell Summary,HRA KG,cell,cell,agree,node type
+node,Cell types,"SPOKE,HRA KG",cell,cell,agree,node type
+node,Cells,"Bioteque,NCATS GARD,Monarch KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",cell,cell,agree,node type
+node,Cellular Components,"Bioteque,PrimeKG,Hetionet,SPOKE,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",cellular component,cellular component,agree,node type
+node,Chemical Mixture,RTX-KG2,chemical entity,chemical entity,agree,node type
+node,Chemicals / Chemical Entity/ Drugs,"PharmKG,Bioteque,PrimeKG,GNBR,NCATS GARD,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",chemical entity,chemical entity,agree,node type
+node,Chromosome,Clinical KG,nucleic acid entity,nucleic acid entity,agree,node type
+node,Clinical Attribute,ROBOKOP,clinical attribute,clinical attribute,agree,node type
+node,Clinical Intervention,RTX-KG2,clinical intervention,clinical intervention,agree,node type
+node,Clinical Variable,,clinical attribute,clinical attribute,agree,node type
+node,Clinically Relevant Variable,Clinical KG,clinical attribute,clinical attribute,agree,node type
+node,Code,Petagraph,information content entity,,excluded (internal label),internal label
+node,Cofactors,PheKnowLator,,chemical entity,new mapping,node type
+node,Cohort,"RTX-KG2,ROBOKOP",population of individual organisms,population of individual organisms,agree,node type
+node,Collision Summary,HRA KG,event,event,agree,node type
+node,Complex,Clinical KG,macromolecular complex,macromolecular complex,agree,node type
+node,Compounds,"Bioteque,Hetionet,SPOKE",chemical entity,chemical entity,agree,node type
+node,Concept,Petagraph,information content entity,information content entity,agree,node type
+node,Corridor,HRA KG,geographic location,geographic location,agree,node type
+node,Dataset,HRA KG,dataset,dataset,agree,node type
+node,Definition,Petagraph,information content entity,,excluded (internal label),internal label
+node,Devices,"RTX-KG2,ROBOKOP",device,device,agree,node type
+node,Diseases,"PharmKG,Bioteque,PrimeKG,Hetionet,SPOKE,GNBR,NCATS GARD,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",disease,disease,agree,node type
+node,Domains,Bioteque,protein domain,protein domain,agree,node type
+node,Donor,HRA KG,individual organism,individual organism,agree,node type
+node,Enhancer,GenomicKB,regulatory region,regulatory region,agree,node type
+node,Environmental Features,RTX-KG2,environmental feature,environmental feature,agree,node type
+node,Environmental Processes,RTX-KG2,environmental process,environmental process,agree,node type
+node,Enzymatic Activity,SPOKE,activity,activity,agree,node type
+node,Epigenomic Features,GenomicKB,molecular modification,,original mapping not retained (unresolved),unresolved
+node,Event,RTX-KG2,event,event,agree,node type
+node,Exon,"RTX-KG2,GenomicKB",nucleic acid entity,nucleic acid entity,agree,node type
+node,Experiment,Clinical KG,study,study,agree,node type
+node,Exposures,PrimeKG,exposure,exposure event,changed,node type
+node,Extraction Site (Spatial Entity),HRA KG,anatomical entity,anatomical entity,agree,node type
+node,Food,"SPOKE,Clinical KG,RTX-KG2",food,food,agree,node type
+node,FTU Illustration,HRA KG,information content entity,information content entity,agree,node type
+node,FTU Illustration Node,HRA KG,information content entity,information content entity,agree,node type
+node,Functional Regions,Clinical KG,regulatory region,regulatory region,agree,node type
+node,Gene Family,"RTX-KG2,ROBOKOP,DrugMechDB",gene family,gene family,agree,node type
+node,Genes,"PharmKG,Bioteque,PrimeKG,Hetionet,SPOKE,GNBR,NCATS GARD,Monarch KG,Clinical KG,RTX-KG2,GenomicKB,ROBOKOP,PheKnowLator",gene,gene,agree,node type
+node,Genomic Entity,ROBOKOP,genomic entity,genomic entity,agree,node type
+node,Genotype,Monarch KG,genotype,genotype,agree,node type
+node,Geographical Location,"RTX-KG2,ROBOKOP",geographic location,geographic location,agree,node type
+node,Gross Anatomical Structure,"RTX-KG2,ROBOKOP,DrugMechDB",anatomical entity,anatomical entity,agree,node type
+node,GWAS Study,"Clinical KG,GenomicKB",study,study,agree,node type
+node,Information Content Entity,"RTX-KG2,ROBOKOP",information content entity,information content entity,agree,node type
+node,Information Resource,RTX-KG2,information content entity,information content entity,agree,node type
+node,Insulator,GenomicKB,regulatory region,regulatory region,agree,node type
+node,Known Variant,Clinical KG,sequence variant,sequence variant,agree,node type
+node,Landmark,HRA KG,geographic location,geographic location,agree,node type
+node,Life Stage,"Monarch KG,RTX-KG2",life stage,life stage,agree,node type
+node,Macro Molecular Complex,DrugMechDB,macromolecular complex,macromolecular complex,agree,node type
+node,Material Sample,RTX-KG2,material sample,material sample,agree,node type
+node,Metabolite,Clinical KG,small molecule,small molecule,agree,node type
+node,MicroRNA,RTX-KG2,nucleic acid entity,nucleic acid entity,agree,node type
+node,Millitome Extraction Site,HRA KG,anatomical entity,anatomical entity,agree,node type
+node,Modification,Clinical KG,molecular modification,,original mapping not retained (unresolved),unresolved
+node,Modified Protein,Clinical KG,protein,protein,agree,node type
+node,Molecular Activity,"Monarch KG,RTX-KG2,ROBOKOP,DrugMechDB",activity,activity,agree,node type
+node,Molecular Entity,"Monarch KG,RTX-KG2,ROBOKOP",named thing,named thing,agree,node type
+node,Molecular Functions,"Bioteque,PrimeKG,Hetionet,SPOKE,Clinical KG,PheKnowLator",activity,activity,agree,node type
+node,Molecular Mixture,ROBOKOP,chemical mixture,chemical mixture,agree,node type
+node,Named Thing,"Monarch KG,RTX-KG2,ROBOKOP",named thing,named thing,agree,node type
+node,Non Coding RNA Product,"RTX-KG2,GenomicKB",nucleic acid entity,nucleic acid entity,agree,node type
+node,Nucleic Acid Entity,RTX-KG2,nucleic acid entity,nucleic acid entity,agree,node type
+node,Nutrients,SPOKE,small molecule,small molecule,agree,node type
+node,Organism Taxon,"Monarch KG,RTX-KG2,ROBOKOP,DrugMechDB",organism taxon,organism taxon,agree,node type
+node,Organismal Entity,RTX-KG2,organismal entity,organismal entity,agree,node type
+node,Organisms,"SPOKE,RTX-KG2",organismal entity,organismal entity,agree,node type
+node,Pathalogical Processes,ROBOKOP,,pathological process,new mapping,node type
+node,Pathways,"Bioteque,PrimeKG,Hetionet,SPOKE,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",pathway,pathway,agree,node type
+node,Peptides,Clinical KG,polypeptide,polypeptide,agree,node type
+node,Perturbagens,Bioteque,drug,drug,agree,node type
+node,Pharmacologic Classes,"Bioteque,Hetionet,SPOKE",chemical entity,chemical entity,agree,node type
+node,Phenomenon,"RTX-KG2,ROBOKOP",phenomenon,phenomenon,agree,node type
+node,Phenotypes/ Effects/ Phenotypic Feature,"PrimeKG,NCATS GARD,Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,DrugMechDB,PheKnowLator",phenotypic feature,phenotypic feature,agree,node type
+node,Physical Entity,"RTX-KG2,ROBOKOP",named thing,named thing,agree,node type
+node,Physiological Processes,"RTX-KG2,ROBOKOP",physiological process,physiological process,agree,node type
+node,Polypeptide,RTX-KG2,polypeptide,polypeptide,agree,node type
+node,Population of Individual Organisms,"RTX-KG2,ROBOKOP",population of individual organisms,population of individual organisms,agree,node type
+node,Procedure,"RTX-KG2,ROBOKOP",clinical intervention,clinical intervention,agree,node type
+node,Project,Clinical KG,study,study,agree,node type
+node,Promoter,GenomicKB,regulatory region,regulatory region,agree,node type
+node,Protein Domains,SPOKE,protein domain,protein domain,agree,node type
+node,Protein Family,SPOKE,gene family,gene family,agree,node type
+node,Protein Structure,Clinical KG,protein,protein,agree,node type
+node,Proteins,"PharmKG,Bioteque,SPOKE,NCATS GARD,Monarch KG,Clinical KG,RTX-KG2,GenomicKB,ROBOKOP,DrugMechDB,PheKnowLator",protein,protein,agree,node type
+node,Publications,"Clinical KG,RTX-KG2,ROBOKOP",publication,publication,agree,node type
+node,Reactions,SPOKE,biological process,biological process,agree,node type
+node,Reference Organ,HRA KG,anatomical entity,anatomical entity,agree,node type
+node,Reference Organ Part,HRA KG,anatomical entity,anatomical entity,agree,node type
+node,RNA Product,RTX-KG2,nucleic acid entity,nucleic acid entity,agree,node type
+node,Semantic,Petagraph,information content entity,,excluded (internal label),internal label
+node,Sequence Variant,Monarch KG,sequence variant,sequence variant,agree,node type
+node,Sequences,PheKnowLator,,nucleic acid entity,new mapping,node type
+node,Side Effects,"Hetionet,SPOKE",phenotypic feature,phenotypic feature,agree,node type
+node,Small Molecules,"RTX-KG2,ROBOKOP",small molecule,small molecule,agree,node type
+node,Somatic Mutation,Clinical KG,sequence variant,sequence variant,agree,node type
+node,Subject,Clinical KG,individual organism,individual organism,agree,node type
+node,Super Enhancer,,regulatory region,regulatory region,agree,node type
+node,Symptoms,"Hetionet,SPOKE",phenotypic feature,phenotypic feature,agree,node type
+node,Term,Petagraph,information content entity,,excluded (internal label),internal label
+node,Tissue Section (Sample),HRA KG,material sample,material sample,agree,node type
+node,Tissues,"Bioteque,NCATS GARD,Clinical KG,GenomicKB",anatomical entity,anatomical entity,agree,node type
+node,Transcript,"Clinical KG,RTX-KG2,GenomicKB,ROBOKOP,PheKnowLator",nucleic acid entity,nucleic acid entity,agree,node type
+node,Treatment,RTX-KG2,clinical intervention,clinical intervention,agree,node type
+node,Tssue Block (Sample),HRA KG,material sample,material sample,agree,node type
+node,User,Clinical KG,agent,agent,agree,node type
+node,Vaccines,PheKnowLator,,drug,new mapping,node type
+node,Variants,"Clinical KG,GenomicKB,PheKnowLator",sequence variant,sequence variant,agree,node type
+node,Vitamins,RTX-KG2,small molecule,small molecule,agree,node type
+edge,active_in,ROBOKOP,occurs in,active in,changed,explicit predicate
+edge,actively_involved_in,"Monarch KG,ROBOKOP",occurs in,actively involved in,changed,explicit predicate
+edge,ACTS_ON,Clinical KG,affects,affects,agree,explicit predicate
+edge,acts_upstream_of,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,acts upstream of,changed,explicit predicate
+edge,acts_upstream_of_negative_effect,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,acts upstream of negative effect,changed,explicit predicate
+edge,acts_upstream_of_or_within,"GNBR,Monarch KG,RTX-KG2",contributes to,acts upstream of or within,changed,explicit predicate
+edge,acts_upstream_of_or_within_negative_effect,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,acts upstream of or within negative effect,changed,explicit predicate
+edge,acts_upstream_of_or_within_positive_effect,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,acts upstream of or within positive effect,changed,explicit predicate
+edge,acts_upstream_of_positive_effect,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,acts upstream of positive effect,changed,explicit predicate
+edge,affects,"RTX-KG2,ROBOKOP",affects,affects,agree,explicit predicate
+edge,affects_abundance_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_activity_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_degradation_of,"RTX-KG2,GenomicKB",affects,affects,agree,explicit predicate
+edge,affects_expression_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_localization_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_metabolic_processing_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_molecular_modification_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_mutation_rate_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_response_to,"RTX-KG2,ROBOKOP",affects,affects,agree,explicit predicate
+edge,affects_secretion_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_splicing_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_stability_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_synthesis_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,affects_transport_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,ameliorates_condition,"Monarch KG,ROBOKOP",ameliorates,ameliorates condition,changed,explicit predicate
+edge,analogous_to,RTX-KG2,similar to,similar to,agree,explicit predicate
+edge,Anatomical structure-anatomical structure,HRA KG,,,unmapped in both,unresolved
+edge,Anatomy-anatomy,"PrimeKG,SPOKE",,,unmapped in both,unresolved
+edge,Anatomy-gene,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Anatomy-protein (absent),PrimeKG,,expressed in,new mapping,"node pair, single documented relation"
+edge,Anatomy-protein (present),PrimeKG,,expressed in,new mapping,"node pair, single documented relation"
+edge,AnatomyCellType-anatomy,SPOKE,,,unmapped in both,unresolved
+edge,AnatomyCellType-CellType,SPOKE,,,unmapped in both,unresolved
+edge,AnatomyCellType-gene,"SPOKE,RTX-KG2",,,unmapped in both,unresolved
+edge,ANNOTATED_IN_PATHWAY,Clinical KG,related to,related to,agree,explicit predicate
+edge,Antibody panel-antibody,HRA KG,,,unmapped in both,unresolved
+edge,applied_to_treat,ROBOKOP,treats,applied to treat,changed,explicit predicate
+edge,ASSOCIATED_WITH,"Clinical KG,RTX-KG2,ROBOKOP",associated with,associated with,agree,explicit predicate
+edge,associated_with_increased_likelihood_of,Monarch KG,predisposes,associated with increased likelihood of,changed,explicit predicate
+edge,ASSOCIATED_WITH_INTEGRATED,Clinical KG,associated with,associated with,agree,explicit predicate
+edge,BELONGS_TO_PROTEIN,Clinical KG,related to,related to,agree,explicit predicate
+edge,BELONGS_TO_SUBJECT,Clinical KG,related to,related to,agree,explicit predicate
+edge,Biological process-biological process,"PrimeKG,DrugMechDB",,,unmapped in both,unresolved
+edge,Biological process-disease,DrugMechDB,,,unmapped in both,unresolved
+edge,Biological process-organism taxon,DrugMechDB,,,unmapped in both,unresolved
+edge,Biological process-protein,PrimeKG,,,unmapped in both,unresolved
+edge,Biomarker-cell type,HRA KG,,,unmapped in both,unresolved
+edge,capable_of,"RTX-KG2,ROBOKOP",enables,capable of,changed,explicit predicate
+edge,capable_of_part_of,RTX-KG2,part of,part of,agree,explicit predicate
+edge,catalyzes,ROBOKOP,affects,catalyzes,changed,explicit predicate
+edge,causally_influenced_by,PheKnowLator,,affected by,new mapping,explicit predicate
+edge,causally_influences,PheKnowLator,,affects,new mapping,explicit predicate
+edge,caused_by,Monarch KG,causes,caused by,changed,explicit predicate
+edge,causes,"Monarch KG,RTX-KG2,ROBOKOP",causes,causes,agree,explicit predicate
+edge,causes_or_contributes_to_condition,PheKnowLator,,contributes to,new mapping,explicit predicate
+edge,Cell Summary-biomarker,HRA KG,,,unmapped in both,unresolved
+edge,Cell Summary-cell type,HRA KG,,,unmapped in both,unresolved
+edge,Cell-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Cell-cell,Bioteque,,,unmapped in both,unresolved
+edge,Cell-compound,Bioteque,,,unmapped in both,unresolved
+edge,Cell-disease,"Bioteque,DrugMechDB",,,unmapped in both,unresolved
+edge,Cell-gene,Bioteque,,,unmapped in both,unresolved
+edge,Cell-pathway,Bioteque,,,unmapped in both,unresolved
+edge,Cell/tissue ontology-cell/tissue ontology,GenomicKB,,,unmapped in both,unresolved
+edge,CellType-anatomical structure,HRA KG,,,unmapped in both,unresolved
+edge,Cellular component-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Cellular component-cellular component,"Bioteque,PrimeKG",,,unmapped in both,unresolved
+edge,Cellular component-organism taxon,DrugMechDB,,,unmapped in both,unresolved
+edge,Cellular component-protein,PrimeKG,,,unmapped in both,unresolved
+edge,Chemical-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Chemical-chemical,"PharmKG,Bioteque",,,unmapped in both,unresolved
+edge,Chemical-disease,"PharmKG,GNBR,DrugMechDB",,,unmapped in both,unresolved
+edge,Chemical-gene,"PharmKG,GNBR",,,unmapped in both,unresolved
+edge,chemically_similar_to,"RTX-KG2,ROBOKOP",similar to,chemically similar to,changed,explicit predicate
+edge,coexists_with,"RTX-KG2,ROBOKOP",related to,coexists with,changed,explicit predicate
+edge,coexpressed_with,ROBOKOP,correlated with,coexpressed with,changed,explicit predicate
+edge,colocalizes_with,"Monarch KG,RTX-KG2,ROBOKOP",related to,colocalizes with,changed,explicit predicate
+edge,COMPILED_INTERACTS_WITH,Clinical KG,interacts with,interacts with,agree,explicit predicate
+edge,COMPILED_TARGETS,Clinical KG,targets,affects,changed,explicit predicate
+edge,composed_primarily_of,ROBOKOP,part of,composed primarily of,changed,explicit predicate
+edge,Compound-chemical entity,Bioteque,,,unmapped in both,unresolved
+edge,Compound-compound,"Bioteque,Hetionet",,,unmapped in both,unresolved
+edge,Compound-disease,SPOKE,,,unmapped in both,unresolved
+edge,Compound-disease (causal),Bioteque,,causes,new mapping,"node pair, single documented relation"
+edge,Compound-disease (palliates),Hetionet,,ameliorates condition,new mapping,"node pair, single documented relation"
+edge,Compound-gene,"Bioteque,Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Compound-pharmacologic class,Bioteque,,,unmapped in both,unresolved
+edge,Compound-protein,SPOKE,,,unmapped in both,unresolved
+edge,Compound-protein domain,SPOKE,,,unmapped in both,unresolved
+edge,Compound-side effect,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,connected_to,RTX-KG2,related to,related to,agree,explicit predicate
+edge,contraindicated_for,RTX-KG2,prevents,contraindicated in,changed,explicit predicate
+edge,contraindicated_in,"Monarch KG,ROBOKOP",prevents,contraindicated in,changed,explicit predicate
+edge,contributes_to,"Monarch KG,RTX-KG2,ROBOKOP",contributes to,contributes to,agree,explicit predicate
+edge,correlated_with,"RTX-KG2,ROBOKOP",correlated with,correlated with,agree,explicit predicate
+edge,CURATED_AFFECTS_INTERACTION_WITH,Clinical KG,interacts with,interacts with,agree,explicit predicate
+edge,CURATED_INTERACTS_WITH,Clinical KG,interacts with,interacts with,agree,explicit predicate
+edge,CURATED_TARGETS,Clinical KG,targets,affects,changed,explicit predicate
+edge,Dataset-cell summary,HRA KG,,,unmapped in both,unresolved
+edge,Dataset-tissue section,HRA KG,,,unmapped in both,unresolved
+edge,decreases_activity_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_degradation_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_expression_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_localization_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_metabolic_processing_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_molecular_modification_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_mutation_rate_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_response_to,"RTX-KG2,ROBOKOP",affects,affects,agree,explicit predicate
+edge,decreases_secretion_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_splicing_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_stability_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_synthesis_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,decreases_transport_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,derives_from,"RTX-KG2,ROBOKOP",derives from,derives from,agree,explicit predicate
+edge,DETECTED_IN_PATHOLOGY_SAMPLE,Clinical KG,expressed in,expressed in,agree,explicit predicate
+edge,develops_from,"RTX-KG2,ROBOKOP",develops from,develops from,agree,explicit predicate
+edge,diagnoses,ROBOKOP,diagnoses,diagnoses,agree,explicit predicate
+edge,Disease-anatomy,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Disease-disease,"PharmKG,Bioteque,PrimeKG,Hetionet,SPOKE,DrugMechDB",,,unmapped in both,unresolved
+edge,Disease-gene,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Disease-phenotype (negative),PrimeKG,,has phenotype,new mapping,"node pair, single documented relation"
+edge,Disease-phenotype (positive),PrimeKG,,has phenotype,new mapping,"node pair, single documented relation"
+edge,Disease-protein,PrimeKG,,,unmapped in both,unresolved
+edge,Disease-symptom,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,disease_has_basis_in,ROBOKOP,associated with,disease has basis in,changed,explicit predicate
+edge,disease_has_location,Monarch KG,located in,disease has location,changed,explicit predicate
+edge,disrupts,"Monarch KG,RTX-KG2,ROBOKOP",affects,disrupts,changed,explicit predicate
+edge,Domain-domain (protein),Bioteque,,,unmapped in both,unresolved
+edge,Donor-tissue block,HRA KG,,,unmapped in both,unresolved
+edge,Drug-disease (contraindication),PrimeKG,,contraindicated in,new mapping,"node pair, single documented relation"
+edge,Drug-disease (indication),PrimeKG,,treats,new mapping,"node pair, single documented relation"
+edge,Drug-disease (off-label use),PrimeKG,,applied to treat,new mapping,"node pair, single documented relation"
+edge,Drug-drug,"Bioteque,PrimeKG",,,unmapped in both,unresolved
+edge,Drug-gene family,DrugMechDB,,,unmapped in both,unresolved
+edge,Drug-phenotype,PrimeKG,,,unmapped in both,unresolved
+edge,Drug-protein,"PrimeKG,DrugMechDB",,,unmapped in both,unresolved
+edge,EC-EC,RTX-KG2,,,unmapped in both,unresolved
+edge,enables,"Monarch KG,RTX-KG2,ROBOKOP",enables,enables,agree,explicit predicate
+edge,Enhancer-gene,GenomicKB,,,unmapped in both,unresolved
+edge,Entity-genomic sequence (locate at),GenomicKB,located in,located in,agree,explicit predicate
+edge,Enzymatic activity-EC,SPOKE,,,unmapped in both,unresolved
+edge,Enzymatic activity–Metabolic reaction,SPOKE,,,unmapped in both,unresolved
+edge,EquivalentClass,NCATS GARD,same as,same as,agree,explicit predicate
+edge,ExactMatch,NCATS GARD,same as,exact match,changed,explicit predicate
+edge,Exposure-biological process,PrimeKG,,,unmapped in both,unresolved
+edge,Exposure-cellular component,PrimeKG,,,unmapped in both,unresolved
+edge,Exposure-disease,PrimeKG,,,unmapped in both,unresolved
+edge,Exposure-exposure,PrimeKG,,,unmapped in both,unresolved
+edge,Exposure-molecular function,PrimeKG,,,unmapped in both,unresolved
+edge,Exposure-protein,PrimeKG,,,unmapped in both,unresolved
+edge,expressed_in,"Monarch KG,RTX-KG2,ROBOKOP",expressed in,expressed in,agree,explicit predicate
+edge,Extraction Site-anatomical structure,HRA KG,,,unmapped in both,unresolved
+edge,Extraction Site-collision summary,HRA KG,,,unmapped in both,unresolved
+edge,Extraction Site-corridor,HRA KG,,,unmapped in both,unresolved
+edge,Extraction Site-reference organ,HRA KG,,,unmapped in both,unresolved
+edge,Food-compund,SPOKE,,,unmapped in both,unresolved
+edge,Food-food,SPOKE,,,unmapped in both,unresolved
+edge,FOUND_IN_PROTEIN,Clinical KG,located in,located in,agree,explicit predicate
+edge,FROM_TISSUE,Clinical KG,expressed in,expressed in,agree,explicit predicate
+edge,FTU Illustration-FTU Illustration node,HRA KG,,,unmapped in both,unresolved
+edge,function_of,PheKnowLator,,enabled by,new mapping,explicit predicate
+edge,Gene ontology-gene ontology,GenomicKB,,,unmapped in both,unresolved
+edge,Gene product-gene,SPOKE,,,unmapped in both,unresolved
+edge,gene-anatomy,SPOKE,,,unmapped in both,unresolved
+edge,Gene-biological process,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Gene-cellular component,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Gene-compound (upregulation_sensitizes),Bioteque,,affects,new mapping,"node pair, single documented relation"
+edge,Gene-disease,"PharmKG,Bioteque,GNBR",,,unmapped in both,unresolved
+edge,Gene-gene,"PharmKG,Bioteque,Hetionet,GNBR,GenomicKB",,,unmapped in both,unresolved
+edge,Gene-molecular function,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Gene-ontologies (belong to),GenomicKB,,member of,new mapping,"node pair, single documented relation"
+edge,Gene-ontologies (express in),GenomicKB,,expressed in,new mapping,"node pair, single documented relation"
+edge,Gene-pathway,"Bioteque,Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Gene-protein,SPOKE,,,unmapped in both,unresolved
+edge,gene-symptom,SPOKE,,,unmapped in both,unresolved
+edge,Gene-tissue,Bioteque,,,unmapped in both,unresolved
+edge,Gene-transcript,GenomicKB,,,unmapped in both,unresolved
+edge,Gene-transcriptional factors,GenomicKB,,,unmapped in both,unresolved
+edge,gene_associated_with_condition,"Monarch KG,ROBOKOP",associated with,gene associated with condition,changed,explicit predicate
+edge,gene_product_of,"ROBOKOP,PheKnowLator",derives from,gene product of,changed,explicit predicate
+edge,GeneFamily-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,GeneFamily-molecular activity,DrugMechDB,,,unmapped in both,unresolved
+edge,genetically_associated_with,"Monarch KG,ROBOKOP",associated with,associated with,agree,explicit predicate
+edge,genetically_interacts_with,"RTX-KG2,ROBOKOP,PheKnowLator",interacts with,genetically interacts with,changed,explicit predicate
+edge,Genomic sequence-genomic sequence,GenomicKB,,,unmapped in both,unresolved
+edge,Gross Anatomical Structure-disease,DrugMechDB,,,unmapped in both,unresolved
+edge,Gross Anatomical Structure-phenotypic feature,DrugMechDB,,,unmapped in both,unresolved
+edge,has_active_ingredient,ROBOKOP,has part,has active ingredient,changed,explicit predicate
+edge,has_adverse_event,"RTX-KG2,ROBOKOP",has side effect,has adverse event,changed,explicit predicate
+edge,has_biomarker,RTX-KG2,has biomarker,has biomarker,agree,explicit predicate
+edge,HAS_CLINICAL_STATE,Clinical KG,related to,related to,agree,explicit predicate
+edge,has_component,PheKnowLator,,has part,new mapping,explicit predicate
+edge,HAS_CONTENT,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_DISEASE,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_ENROLLED,Clinical KG,related to,related to,agree,explicit predicate
+edge,has_function,"DrugMechDB,PheKnowLator",,enables,new mapping,explicit predicate
+edge,has_gene_product,PheKnowLator,,has gene product,new mapping,label is a Biolink predicate
+edge,has_input,ROBOKOP,has input,has input,agree,explicit predicate
+edge,has_metabolite,ROBOKOP,has metabolite,has metabolite,agree,explicit predicate
+edge,has_mode_of_inheritence,Monarch KG,related to,related to,agree,explicit predicate
+edge,HAS_MODIFICATION,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_MODIFIED_SITE,Clinical KG,related to,related to,agree,explicit predicate
+edge,has_output,ROBOKOP,has output,has output,agree,explicit predicate
+edge,HAS_PARENT,Clinical KG,related to,related to,agree,explicit predicate
+edge,has_part,"RTX-KG2,ROBOKOP",has part,has part,agree,explicit predicate
+edge,has_participant,"Monarch KG,ROBOKOP,PheKnowLator",has participant,has participant,agree,explicit predicate
+edge,Has_phenotype,"NCATS GARD,Monarch KG,RTX-KG2,ROBOKOP,PheKnowLator",has phenotype,has phenotype,agree,explicit predicate
+edge,HAS_QUANTIFIED_CLINICAL,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_QUANTIFIED_MODIFIED_PROTEIN,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_QUANTIFIED_PEPTIDE,Clinical KG,related to,related to,agree,explicit predicate
+edge,HAS_QUANTIFIED_PROTEIN,Clinical KG,related to,related to,agree,explicit predicate
+edge,has_sequence_variant,Monarch KG,has variant,has sequence variant,changed,explicit predicate
+edge,HAS_SIDE_EFFECT,Clinical KG,has side effect,has side effect,agree,explicit predicate
+edge,HAS_STRUCTURE,Clinical KG,related to,related to,agree,explicit predicate
+edge,homologous_to,ROBOKOP,homologous to,homologous to,agree,explicit predicate
+edge,I_Code,NCATS GARD,related to,related to,agree,explicit predicate
+edge,I_GENE,NCATS GARD,related to,related to,agree,explicit predicate
+edge,in_complex_with,ROBOKOP,interacts with,in complex with,changed,explicit predicate
+edge,in_taxon,ROBOKOP,in taxon,in taxon,agree,explicit predicate
+edge,increases_activity_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,increases_expression_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,increases_response_to,ROBOKOP,affects,affects,agree,explicit predicate
+edge,increases_transport_of,RTX-KG2,affects,affects,agree,explicit predicate
+edge,interacts_with,"Monarch KG,RTX-KG2,ROBOKOP,PheKnowLator",interacts with,interacts with,agree,explicit predicate
+edge,IS_A_KNOWN_VARIANT,Clinical KG,variant of,is sequence variant of,changed,explicit predicate
+edge,is_active_in,Monarch KG,occurs in,occurs in,agree,explicit predicate
+edge,IS_BIOMARKER_OF_DISEASE,Clinical KG,biomarker for,biomarker for,agree,explicit predicate
+edge,is_frameshift_variant_of,ROBOKOP,variant of,is frameshift variant of,changed,explicit predicate
+edge,IS_INDICATED_FOR,Clinical KG,treats,treats,agree,explicit predicate
+edge,is_missense_variant_of,ROBOKOP,variant of,is missense variant of,changed,explicit predicate
+edge,is_nearby_variant_of,ROBOKOP,variant of,is nearby variant of,changed,explicit predicate
+edge,is_non_coding_variant_of,ROBOKOP,variant of,is non coding variant of,changed,explicit predicate
+edge,is_nonsense_variant_of,ROBOKOP,variant of,is nonsense variant of,changed,explicit predicate
+edge,IS_RESPONSIBLE_FOR,Clinical KG,causes,causes,agree,explicit predicate
+edge,is_sequence_variant_of,Monarch KG,variant of,is sequence variant of,changed,explicit predicate
+edge,is_splice_site_variant_of,ROBOKOP,variant of,is splice site variant of,changed,explicit predicate
+edge,is_substance_that_treats,PheKnowLator,,treats,new mapping,explicit predicate
+edge,IS_SUBSTRATE_OF,Clinical KG,targets,is substrate of,changed,explicit predicate
+edge,IS_SUBUNIT_OF,Clinical KG,part of,part of,agree,explicit predicate
+edge,is_synonymous_variant_of,ROBOKOP,variant of,is synonymous variant of,changed,explicit predicate
+edge,is_treated_by_substance,PheKnowLator,,treated by,new mapping,explicit predicate
+edge,Knocked-out gene-gene,SPOKE,,,unmapped in both,unresolved
+edge,Landmark-reference organ part,HRA KG,,,unmapped in both,unresolved
+edge,LOCATED_IN,"Monarch KG,Clinical KG,RTX-KG2,ROBOKOP,PheKnowLator",located in,located in,agree,explicit predicate
+edge,location_of,PheKnowLator,,location of,new mapping,label is a Biolink predicate
+edge,Macromolecular Complex-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,manifestation_of,ROBOKOP,causes,manifestation of,changed,explicit predicate
+edge,MENTIONED_IN_PUBLICATION,Clinical KG,mentions,mentions,agree,explicit predicate
+edge,Millitome Extraction Site-reference organ,HRA KG,,,unmapped in both,unresolved
+edge,model_of,Monarch KG,model of,model of,agree,explicit predicate
+edge,Molecular Activity-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Molecular Activity-organism taxon,DrugMechDB,,,unmapped in both,unresolved
+edge,Molecular function-molecular function,"Bioteque,PrimeKG",,,unmapped in both,unresolved
+edge,Molecular function-protein,PrimeKG,,,unmapped in both,unresolved
+edge,molecularly_interacts_with,PheKnowLator,,physically interacts with,new mapping,explicit predicate
+edge,N_Name,NCATS GARD,,,excluded (internal label),internal label
+edge,negatively_correlated_with,ROBOKOP,correlated with,negatively correlated with,changed,explicit predicate
+edge,Non coding RNA-ontology,GenomicKB,,,unmapped in both,unresolved
+edge,occurs_in,ROBOKOP,occurs in,occurs in,agree,explicit predicate
+edge,Organism Taxon-disease,DrugMechDB,,,unmapped in both,unresolved
+edge,Organism Taxon-phenotypic feature,DrugMechDB,,,unmapped in both,unresolved
+edge,Organism-disease,SPOKE,,,unmapped in both,unresolved
+edge,Organism-organism,SPOKE,,,unmapped in both,unresolved
+edge,Organism-protein,SPOKE,,,unmapped in both,unresolved
+edge,orthologous_to,Monarch KG,orthologous to,orthologous to,agree,explicit predicate
+edge,Overexpressed gene-gene,SPOKE,,,unmapped in both,unresolved
+edge,overlaps,"RTX-KG2,ROBOKOP",overlaps,overlaps,agree,explicit predicate
+edge,part_of,"Monarch KG,RTX-KG2",part of,part of,agree,explicit predicate
+edge,PARTICIPATES_IN,"Monarch KG,Clinical KG,PheKnowLator",participates in,participates in,agree,explicit predicate
+edge,Pathway group- pathway group,SPOKE,,,unmapped in both,unresolved
+edge,Pathway-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Pathway-chemical substance,DrugMechDB,,,unmapped in both,unresolved
+edge,Pathway-pathway,"Bioteque,PrimeKG,SPOKE",,,unmapped in both,unresolved
+edge,PAYLOAD,NCATS GARD,related to,,excluded (internal label),internal label
+edge,Perturbagen-cell,Bioteque,,,unmapped in both,unresolved
+edge,Perturbagen-gene,Bioteque,,,unmapped in both,unresolved
+edge,Pharmacologic class-compound,"Hetionet,SPOKE",,,unmapped in both,unresolved
+edge,Pharmacologic class-pharmacologic class,Bioteque,,,unmapped in both,unresolved
+edge,Phenotype-phenotype,PrimeKG,,,unmapped in both,unresolved
+edge,Phenotype-protein,PrimeKG,,,unmapped in both,unresolved
+edge,phenotype_of,PheKnowLator,,phenotype of,new mapping,label is a Biolink predicate
+edge,Phenotypic Feature-disease,DrugMechDB,,,unmapped in both,unresolved
+edge,physically_interacts_with,ROBOKOP,,physically interacts with,new mapping,label is a Biolink predicate
+edge,positively_correlated_with,ROBOKOP,correlated with,positively correlated with,changed,explicit predicate
+edge,positively_regulates,RTX-KG2,regulates,regulates,agree,explicit predicate
+edge,precedes,ROBOKOP,precedes,precedes,agree,explicit predicate
+edge,predisposes_to_condition,ROBOKOP,predisposes,predisposes to condition,changed,explicit predicate
+edge,preventative_for_condition,"Monarch KG,ROBOKOP",prevents,preventative for condition,changed,explicit predicate
+edge,prevents,RTX-KG2,prevents,preventative for condition,changed,explicit predicate
+edge,produces,"RTX-KG2,ROBOKOP",produces,produces,agree,explicit predicate
+edge,Protein-biological process,DrugMechDB,,,unmapped in both,unresolved
+edge,Protein-cellLine,SPOKE,,,unmapped in both,unresolved
+edge,Protein-cellType,SPOKE,,,unmapped in both,unresolved
+edge,Protein-chemical substance,DrugMechDB,,,unmapped in both,unresolved
+edge,Protein-compound,SPOKE,,,unmapped in both,unresolved
+edge,Protein-disease,SPOKE,,,unmapped in both,unresolved
+edge,Protein-Enzymatic activity,SPOKE,,,unmapped in both,unresolved
+edge,Protein-pathway group,SPOKE,,,unmapped in both,unresolved
+edge,Protein-protein,"PrimeKG,SPOKE",,,unmapped in both,unresolved
+edge,ProteinDomain-protein,SPOKE,,,unmapped in both,unresolved
+edge,ProteinDomain-proteindomain,SPOKE,,,unmapped in both,unresolved
+edge,ProteinDomain-proteinfamily,SPOKE,,,unmapped in both,unresolved
+edge,PUBLISHED_IN,Clinical KG,mentions,mentions,agree,explicit predicate
+edge,R_rel,NCATS GARD,related to,related to,agree,explicit predicate
+edge,Reaction-compound,SPOKE,,,unmapped in both,unresolved
+edge,realized_in_response_to,PheKnowLator,,affected by,new mapping,explicit predicate
+edge,regulates,"RTX-KG2,ROBOKOP",regulates,regulates,agree,explicit predicate
+edge,related_to,"Monarch KG,RTX-KG2,ROBOKOP",related to,related to,agree,explicit predicate
+edge,responsible_for,RTX-KG2,causes,causes,agree,explicit predicate
+edge,ribosomal_translation_of,PheKnowLator,,translation of,new mapping,explicit predicate
+edge,ribosomally_translates_to,PheKnowLator,,translates to,new mapping,explicit predicate
+edge,same_as,RTX-KG2,same as,same as,agree,explicit predicate
+edge,Sequence variants-gene,GenomicKB,variant of,is sequence variant of,changed,explicit predicate
+edge,similar_to,ROBOKOP,similar to,similar to,agree,explicit predicate
+edge,SPLITTED_INTO,Clinical KG,related to,related to,agree,explicit predicate
+edge,STUDIES_DISEASE,Clinical KG,related to,related to,agree,explicit predicate
+edge,STUDIES_TISSUE,Clinical KG,related to,related to,agree,explicit predicate
+edge,Subclass_of,"NCATS GARD,Monarch KG,RTX-KG2,ROBOKOP",subclass of,subclass of,agree,explicit predicate
+edge,superclass_of,RTX-KG2,superclass of,superclass of,agree,explicit predicate
+edge,target_for,ROBOKOP,targets,target for,changed,explicit predicate
+edge,TARGETS_CLINICALLY_RELEVANT_VARIANT,Clinical KG,targets,affects,changed,explicit predicate
+edge,temporarily_related_to,"RTX-KG2,ROBOKOP",related to,related to,agree,explicit predicate
+edge,Tissue Block-extraction site,HRA KG,,,unmapped in both,unresolved
+edge,Tissue Block-millitome extraction site,HRA KG,,,unmapped in both,unresolved
+edge,Tissue Block-tissue section,HRA KG,,,unmapped in both,unresolved
+edge,Tissue-disease,Bioteque,,,unmapped in both,unresolved
+edge,Tissue-tissue,Bioteque,,,unmapped in both,unresolved
+edge,transcribed_from,PheKnowLator,,transcribed from,new mapping,label is a Biolink predicate
+edge,TRANSCRIBED_INTO,Clinical KG,transcribed into,transcribed to,changed,explicit predicate
+edge,transcribed_to,PheKnowLator,,transcribed to,new mapping,label is a Biolink predicate
+edge,Transcript-exons,GenomicKB,,,unmapped in both,unresolved
+edge,Transcript-protein,GenomicKB,,,unmapped in both,unresolved
+edge,TRANSLATED_INTO,Clinical KG,translated into,translates to,changed,explicit predicate
+edge,transports,RTX-KG2,transports,affects,changed,explicit predicate
+edge,treats,"RTX-KG2,ROBOKOP",treats,treats,agree,explicit predicate
+edge,treats_or_applied_or_studied_to_treat,"Monarch KG,ROBOKOP",treats,treats or applied or studied to treat,changed,explicit predicate
+edge,upstream_of,RTX-KG2,contributes to,contributes to,agree,explicit predicate
+edge,Variant-gene/ontologies,GenomicKB,variant of,is sequence variant of,changed,explicit predicate
+edge,VARIANT_FOUND_IN_CHROMOSOME,Clinical KG,variant of,is sequence variant of,changed,explicit predicate
+edge,VARIANT_FOUND_IN_GENE,Clinical KG,variant of,is sequence variant of,changed,explicit predicate
+edge,VARIANT_FOUND_IN_PROTEIN,Clinical KG,variant of,is sequence variant of,changed,explicit predicate
+edge,VARIANT_IS_CLINICALLY_RELEVANT,Clinical KG,variant of,is sequence variant of,changed,explicit predicate
+edge,variant_of,RTX-KG2,variant of,is sequence variant of,changed,explicit predicate

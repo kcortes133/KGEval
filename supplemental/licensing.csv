@@ -1,0 +1,18 @@
+KG,License,Notes
+PharmKG,None stated,GitHub README says 'All Rights Reserved'; no clear data license.
+Bioteque,CC BY 4.0,
+PrimeKG,CC BY 4.0,
+Hetionet,CC0 1.0,
+SPOKE,CC BY 4.0,
+GNBR,CC BY 4.0,
+NCATS GARD,CC BY 4.0,
+Monarch KG,CC BY 4.0,
+Clinical KG,CC BY-NC 4.0,
+RTX-KG2,CC BY 4.0,
+HRA KG,CC BY 4.0,
+Petagraph,CC BY-NC-ND 4.0,
+GenomicKB,PolyForm Noncommercial 1.0.0,Academic use free; commercial use requires a license. https://available-inventions.umich.edu/product/genomickb-a-knowledgebase-for-the-human-genome
+ROBOKOP,MIT (code); per-source data licenses,Each KG ships a metadata file with per-source licensing information. https://arxiv.org/abs/2601.10008
+EmBiology,Commercial subscription,No public data license.
+DrugMechDB,CC0 1.0,Repository and Zenodo. https://zenodo.org/records/8139357
+PheKnowLator,Apache 2.0 (project); source data licenses vary,https://github.com/callahantiff/PheKnowLator

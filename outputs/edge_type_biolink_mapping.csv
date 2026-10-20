@@ -1,0 +1,344 @@
+original,biolink_mapping,rule
+active_in,biolink:active_in,explicit predicate
+actively_involved_in,biolink:actively_involved_in,explicit predicate
+ACTS_ON,biolink:affects,explicit predicate
+acts_upstream_of,biolink:acts_upstream_of,explicit predicate
+acts_upstream_of_negative_effect,biolink:acts_upstream_of_negative_effect,explicit predicate
+acts_upstream_of_or_within,biolink:acts_upstream_of_or_within,explicit predicate
+acts_upstream_of_or_within_negative_effect,biolink:acts_upstream_of_or_within_negative_effect,explicit predicate
+acts_upstream_of_or_within_positive_effect,biolink:acts_upstream_of_or_within_positive_effect,explicit predicate
+acts_upstream_of_positive_effect,biolink:acts_upstream_of_positive_effect,explicit predicate
+affects,biolink:affects,explicit predicate
+affects_abundance_of,biolink:affects,explicit predicate
+affects_activity_of,biolink:affects,explicit predicate
+affects_degradation_of,biolink:affects,explicit predicate
+affects_expression_of,biolink:affects,explicit predicate
+affects_localization_of,biolink:affects,explicit predicate
+affects_metabolic_processing_of,biolink:affects,explicit predicate
+affects_molecular_modification_of,biolink:affects,explicit predicate
+affects_mutation_rate_of,biolink:affects,explicit predicate
+affects_response_to,biolink:affects,explicit predicate
+affects_secretion_of,biolink:affects,explicit predicate
+affects_splicing_of,biolink:affects,explicit predicate
+affects_stability_of,biolink:affects,explicit predicate
+affects_synthesis_of,biolink:affects,explicit predicate
+affects_transport_of,biolink:affects,explicit predicate
+ameliorates_condition,biolink:ameliorates_condition,explicit predicate
+analogous_to,biolink:similar_to,explicit predicate
+Anatomical structure-anatomical structure,,unresolved
+Anatomy-anatomy,,unresolved
+AnatomyCellType-anatomy,,unresolved
+AnatomyCellType-CellType,,unresolved
+AnatomyCellType-gene,,unresolved
+Anatomy-gene,,unresolved
+Anatomy-protein (absent),biolink:expressed_in,"node pair, single documented relation"
+Anatomy-protein (present),biolink:expressed_in,"node pair, single documented relation"
+ANNOTATED_IN_PATHWAY,biolink:related_to,explicit predicate
+Antibody panel-antibody,,unresolved
+applied_to_treat,biolink:applied_to_treat,explicit predicate
+ASSOCIATED_WITH,biolink:associated_with,explicit predicate
+associated_with_increased_likelihood_of,biolink:associated_with_increased_likelihood_of,explicit predicate
+ASSOCIATED_WITH_INTEGRATED,biolink:associated_with,explicit predicate
+BELONGS_TO_PROTEIN,biolink:related_to,explicit predicate
+BELONGS_TO_SUBJECT,biolink:related_to,explicit predicate
+Biological process-biological process,,unresolved
+Biological process-disease,,unresolved
+Biological process-organism taxon,,unresolved
+Biological process-protein,,unresolved
+Biomarker-cell type,,unresolved
+capable_of,biolink:capable_of,explicit predicate
+capable_of_part_of,biolink:part_of,explicit predicate
+catalyzes,biolink:catalyzes,explicit predicate
+causally_influenced_by,biolink:affected_by,explicit predicate
+causally_influences,biolink:affects,explicit predicate
+caused_by,biolink:caused_by,explicit predicate
+causes,biolink:causes,explicit predicate
+causes_or_contributes_to_condition,biolink:contributes_to,explicit predicate
+Cell-biological process,,unresolved
+Cell-cell,,unresolved
+Cell-compound,,unresolved
+Cell-disease,,unresolved
+Cell-gene,,unresolved
+Cell-pathway,,unresolved
+Cellular component-biological process,,unresolved
+Cellular component-cellular component,,unresolved
+Cellular component-organism taxon,,unresolved
+Cellular component-protein,,unresolved
+Cell/tissue ontology-cell/tissue ontology,,unresolved
+Cell Summary-biomarker,,unresolved
+Cell Summary-cell type,,unresolved
+CellType-anatomical structure,,unresolved
+Chemical-biological process,,unresolved
+Chemical-chemical,,unresolved
+Chemical-disease,,unresolved
+Chemical-gene,,unresolved
+chemically_similar_to,biolink:chemically_similar_to,explicit predicate
+coexists_with,biolink:coexists_with,explicit predicate
+coexpressed_with,biolink:coexpressed_with,explicit predicate
+colocalizes_with,biolink:colocalizes_with,explicit predicate
+COMPILED_INTERACTS_WITH,biolink:interacts_with,explicit predicate
+COMPILED_TARGETS,biolink:affects,explicit predicate
+composed_primarily_of,biolink:composed_primarily_of,explicit predicate
+Compound-chemical entity,,unresolved
+Compound-compound,,unresolved
+Compound-disease (causal),biolink:causes,"node pair, single documented relation"
+Compound-disease,,unresolved
+Compound-disease (palliates),biolink:ameliorates_condition,"node pair, single documented relation"
+Compound-gene,,unresolved
+Compound-pharmacologic class,,unresolved
+Compound-protein,,unresolved
+Compound-protein domain,,unresolved
+Compound-side effect,,unresolved
+connected_to,biolink:related_to,explicit predicate
+contraindicated_for,biolink:contraindicated_in,explicit predicate
+contraindicated_in,biolink:contraindicated_in,explicit predicate
+contributes_to,biolink:contributes_to,explicit predicate
+correlated_with,biolink:correlated_with,explicit predicate
+CURATED_AFFECTS_INTERACTION_WITH,biolink:interacts_with,explicit predicate
+CURATED_INTERACTS_WITH,biolink:interacts_with,explicit predicate
+CURATED_TARGETS,biolink:affects,explicit predicate
+Dataset-cell summary,,unresolved
+Dataset-tissue section,,unresolved
+decreases_activity_of,biolink:affects,explicit predicate
+decreases_degradation_of,biolink:affects,explicit predicate
+decreases_expression_of,biolink:affects,explicit predicate
+decreases_localization_of,biolink:affects,explicit predicate
+decreases_metabolic_processing_of,biolink:affects,explicit predicate
+decreases_molecular_modification_of,biolink:affects,explicit predicate
+decreases_mutation_rate_of,biolink:affects,explicit predicate
+decreases_response_to,biolink:affects,explicit predicate
+decreases_secretion_of,biolink:affects,explicit predicate
+decreases_splicing_of,biolink:affects,explicit predicate
+decreases_stability_of,biolink:affects,explicit predicate
+decreases_synthesis_of,biolink:affects,explicit predicate
+decreases_transport_of,biolink:affects,explicit predicate
+derives_from,biolink:derives_from,explicit predicate
+DETECTED_IN_PATHOLOGY_SAMPLE,biolink:expressed_in,explicit predicate
+develops_from,biolink:develops_from,explicit predicate
+diagnoses,biolink:diagnoses,explicit predicate
+Disease-anatomy,,unresolved
+Disease-disease,,unresolved
+Disease-gene,,unresolved
+disease_has_basis_in,biolink:disease_has_basis_in,explicit predicate
+disease_has_location,biolink:disease_has_location,explicit predicate
+Disease-phenotype (negative),biolink:has_phenotype,"node pair, single documented relation"
+Disease-phenotype (positive),biolink:has_phenotype,"node pair, single documented relation"
+Disease-protein,,unresolved
+Disease-symptom,,unresolved
+disrupts,biolink:disrupts,explicit predicate
+Domain-domain (protein),,unresolved
+Donor-tissue block,,unresolved
+Drug-disease (contraindication),biolink:contraindicated_in,"node pair, single documented relation"
+Drug-disease (indication),biolink:treats,"node pair, single documented relation"
+Drug-disease (off-label use),biolink:applied_to_treat,"node pair, single documented relation"
+Drug-drug,,unresolved
+Drug-gene family,,unresolved
+Drug-phenotype,,unresolved
+Drug-protein,,unresolved
+EC-EC,,unresolved
+enables,biolink:enables,explicit predicate
+Entity-genomic sequence (locate at),biolink:located_in,explicit predicate
+Enhancer-gene,,unresolved
+EquivalentClass,biolink:same_as,explicit predicate
+ExactMatch,biolink:exact_match,explicit predicate
+Exposure-biological process,,unresolved
+Exposure-cellular component,,unresolved
+Exposure-disease,,unresolved
+Exposure-exposure,,unresolved
+Exposure-molecular function,,unresolved
+Exposure-protein,,unresolved
+expressed_in,biolink:expressed_in,explicit predicate
+Extraction Site-anatomical structure,,unresolved
+Extraction Site-collision summary,,unresolved
+Extraction Site-corridor,,unresolved
+Extraction Site-reference organ,,unresolved
+Enzymatic activity-EC,,unresolved
+Enzymatic activity–Metabolic reaction,,unresolved
+Food-compund,,unresolved
+Food-food,,unresolved
+FOUND_IN_PROTEIN,biolink:located_in,explicit predicate
+FROM_TISSUE,biolink:expressed_in,explicit predicate
+FTU Illustration-FTU Illustration node,,unresolved
+function_of,biolink:enabled_by,explicit predicate
+gene-anatomy,,unresolved
+gene_associated_with_condition,biolink:gene_associated_with_condition,explicit predicate
+Gene-biological process,,unresolved
+Gene-cellular component,,unresolved
+Gene-compound (upregulation_sensitizes),biolink:affects,"node pair, single documented relation"
+Gene-disease,,unresolved
+Gene-gene,,unresolved
+Genomic sequence-genomic sequence,,unresolved
+Gene-molecular function,,unresolved
+Gene-ontologies (belong to),biolink:member_of,"node pair, single documented relation"
+Gene-ontologies (express in),biolink:expressed_in,"node pair, single documented relation"
+Gene-pathway,,unresolved
+Gene-protein,,unresolved
+gene-symptom,,unresolved
+Gene-tissue,,unresolved
+Gene-transcript,,unresolved
+Gene-transcriptional factors,,unresolved
+GeneFamily-biological process,,unresolved
+GeneFamily-molecular activity,,unresolved
+Gene ontology-gene ontology,,unresolved
+Gene product-gene,,unresolved
+gene_product_of,biolink:gene_product_of,explicit predicate
+genetically_associated_with,biolink:associated_with,explicit predicate
+genetically_interacts_with,biolink:genetically_interacts_with,explicit predicate
+Gross Anatomical Structure-disease,,unresolved
+Gross Anatomical Structure-phenotypic feature,,unresolved
+has_active_ingredient,biolink:has_active_ingredient,explicit predicate
+has_adverse_event,biolink:has_adverse_event,explicit predicate
+has_biomarker,biolink:has_biomarker,explicit predicate
+HAS_CLINICAL_STATE,biolink:related_to,explicit predicate
+has_component,biolink:has_part,explicit predicate
+HAS_CONTENT,biolink:related_to,explicit predicate
+HAS_DISEASE,biolink:related_to,explicit predicate
+HAS_ENROLLED,biolink:related_to,explicit predicate
+has_function,biolink:enables,explicit predicate
+has_gene_product,biolink:has_gene_product,label is a Biolink predicate
+has_input,biolink:has_input,explicit predicate
+has_metabolite,biolink:has_metabolite,explicit predicate
+has_mode_of_inheritence,biolink:related_to,explicit predicate
+HAS_MODIFICATION,biolink:related_to,explicit predicate
+HAS_MODIFIED_SITE,biolink:related_to,explicit predicate
+has_output,biolink:has_output,explicit predicate
+HAS_PARENT,biolink:related_to,explicit predicate
+has_part,biolink:has_part,explicit predicate
+has_participant,biolink:has_participant,explicit predicate
+Has_phenotype,biolink:has_phenotype,explicit predicate
+HAS_QUANTIFIED_CLINICAL,biolink:related_to,explicit predicate
+HAS_QUANTIFIED_MODIFIED_PROTEIN,biolink:related_to,explicit predicate
+HAS_QUANTIFIED_PEPTIDE,biolink:related_to,explicit predicate
+HAS_QUANTIFIED_PROTEIN,biolink:related_to,explicit predicate
+has_sequence_variant,biolink:has_sequence_variant,explicit predicate
+HAS_SIDE_EFFECT,biolink:has_side_effect,explicit predicate
+HAS_STRUCTURE,biolink:related_to,explicit predicate
+homologous_to,biolink:homologous_to,explicit predicate
+I_Code,biolink:related_to,explicit predicate
+I_GENE,biolink:related_to,explicit predicate
+increases_activity_of,biolink:affects,explicit predicate
+increases_expression_of,biolink:affects,explicit predicate
+increases_transport_of,biolink:affects,explicit predicate
+increases_response_to,biolink:affects,explicit predicate
+in_complex_with,biolink:in_complex_with,explicit predicate
+in_taxon,biolink:in_taxon,explicit predicate
+interacts_with,biolink:interacts_with,explicit predicate
+is_active_in,biolink:occurs_in,explicit predicate
+IS_A_KNOWN_VARIANT,biolink:is_sequence_variant_of,explicit predicate
+IS_BIOMARKER_OF_DISEASE,biolink:biomarker_for,explicit predicate
+is_frameshift_variant_of,biolink:is_frameshift_variant_of,explicit predicate
+IS_INDICATED_FOR,biolink:treats,explicit predicate
+is_missense_variant_of,biolink:is_missense_variant_of,explicit predicate
+is_nearby_variant_of,biolink:is_nearby_variant_of,explicit predicate
+is_non_coding_variant_of,biolink:is_non_coding_variant_of,explicit predicate
+is_nonsense_variant_of,biolink:is_nonsense_variant_of,explicit predicate
+IS_RESPONSIBLE_FOR,biolink:causes,explicit predicate
+is_sequence_variant_of,biolink:is_sequence_variant_of,explicit predicate
+is_splice_site_variant_of,biolink:is_splice_site_variant_of,explicit predicate
+is_substance_that_treats,biolink:treats,explicit predicate
+IS_SUBSTRATE_OF,biolink:is_substrate_of,explicit predicate
+IS_SUBUNIT_OF,biolink:part_of,explicit predicate
+is_synonymous_variant_of,biolink:is_synonymous_variant_of,explicit predicate
+is_treated_by_substance,biolink:treated_by,explicit predicate
+Knocked-out gene-gene,,unresolved
+Landmark-reference organ part,,unresolved
+LOCATED_IN,biolink:located_in,explicit predicate
+location_of,biolink:location_of,label is a Biolink predicate
+Macromolecular Complex-biological process,,unresolved
+manifestation_of,biolink:manifestation_of,explicit predicate
+MENTIONED_IN_PUBLICATION,biolink:mentions,explicit predicate
+Millitome Extraction Site-reference organ,,unresolved
+model_of,biolink:model_of,explicit predicate
+Molecular Activity-biological process,,unresolved
+Molecular Activity-organism taxon,,unresolved
+Molecular function-molecular function,,unresolved
+Molecular function-protein,,unresolved
+molecularly_interacts_with,biolink:physically_interacts_with,explicit predicate
+N_Name,no_biolink_equivalent,internal label
+negatively_correlated_with,biolink:negatively_correlated_with,explicit predicate
+Non coding RNA-ontology,,unresolved
+occurs_in,biolink:occurs_in,explicit predicate
+Organism-disease,,unresolved
+Organism-organism,,unresolved
+Organism-protein,,unresolved
+Organism Taxon-disease,,unresolved
+Organism Taxon-phenotypic feature,,unresolved
+orthologous_to,biolink:orthologous_to,explicit predicate
+Overexpressed gene-gene,,unresolved
+overlaps,biolink:overlaps,explicit predicate
+part_of,biolink:part_of,explicit predicate
+PARTICIPATES_IN,biolink:participates_in,explicit predicate
+Pathway-biological process,,unresolved
+Pathway-chemical substance,,unresolved
+Pathway-pathway,,unresolved
+Pathway group- pathway group,,unresolved
+PAYLOAD,no_biolink_equivalent,internal label
+Perturbagen-cell,,unresolved
+Perturbagen-gene,,unresolved
+Pharmacologic class-compound,,unresolved
+Pharmacologic class-pharmacologic class,,unresolved
+Phenotypic Feature-disease,,unresolved
+phenotype_of,biolink:phenotype_of,label is a Biolink predicate
+Phenotype-phenotype,,unresolved
+Phenotype-protein,,unresolved
+physically_interacts_with,biolink:physically_interacts_with,label is a Biolink predicate
+positively_correlated_with,biolink:positively_correlated_with,explicit predicate
+positively_regulates,biolink:regulates,explicit predicate
+precedes,biolink:precedes,explicit predicate
+predisposes_to_condition,biolink:predisposes_to_condition,explicit predicate
+preventative_for_condition,biolink:preventative_for_condition,explicit predicate
+prevents,biolink:preventative_for_condition,explicit predicate
+produces,biolink:produces,explicit predicate
+Protein-biological process,,unresolved
+Protein-cellLine,,unresolved
+Protein-cellType,,unresolved
+Protein-chemical substance,,unresolved
+Protein-compound,,unresolved
+Protein-disease,,unresolved
+Protein-protein,,unresolved
+ProteinDomain-protein,,unresolved
+ProteinDomain-proteindomain,,unresolved
+ProteinDomain-proteinfamily,,unresolved
+Protein-Enzymatic activity,,unresolved
+Protein-pathway group,,unresolved
+PUBLISHED_IN,biolink:mentions,explicit predicate
+Reaction-compound,,unresolved
+realized_in_response_to,biolink:affected_by,explicit predicate
+R_rel,biolink:related_to,explicit predicate
+regulates,biolink:regulates,explicit predicate
+related_to,biolink:related_to,explicit predicate
+responsible_for,biolink:causes,explicit predicate
+ribosomal_translation_of,biolink:translation_of,explicit predicate
+ribosomally_translates_to,biolink:translates_to,explicit predicate
+same_as,biolink:same_as,explicit predicate
+Sequence variants-gene,biolink:is_sequence_variant_of,explicit predicate
+similar_to,biolink:similar_to,explicit predicate
+SPLITTED_INTO,biolink:related_to,explicit predicate
+STUDIES_DISEASE,biolink:related_to,explicit predicate
+STUDIES_TISSUE,biolink:related_to,explicit predicate
+Subclass_of,biolink:subclass_of,explicit predicate
+superclass_of,biolink:superclass_of,explicit predicate
+target_for,biolink:target_for,explicit predicate
+TARGETS_CLINICALLY_RELEVANT_VARIANT,biolink:affects,explicit predicate
+temporarily_related_to,biolink:related_to,explicit predicate
+Tissue-disease,,unresolved
+Tissue-tissue,,unresolved
+Tissue Block-extraction site,,unresolved
+Tissue Block-millitome extraction site,,unresolved
+Tissue Block-tissue section,,unresolved
+transcribed_from,biolink:transcribed_from,label is a Biolink predicate
+TRANSCRIBED_INTO,biolink:transcribed_to,explicit predicate
+transcribed_to,biolink:transcribed_to,label is a Biolink predicate
+Transcript-exons,,unresolved
+Transcript-protein,,unresolved
+TRANSLATED_INTO,biolink:translates_to,explicit predicate
+transports,biolink:affects,explicit predicate
+treats,biolink:treats,explicit predicate
+treats_or_applied_or_studied_to_treat,biolink:treats_or_applied_or_studied_to_treat,explicit predicate
+upstream_of,biolink:contributes_to,explicit predicate
+VARIANT_FOUND_IN_CHROMOSOME,biolink:is_sequence_variant_of,explicit predicate
+VARIANT_FOUND_IN_GENE,biolink:is_sequence_variant_of,explicit predicate
+VARIANT_FOUND_IN_PROTEIN,biolink:is_sequence_variant_of,explicit predicate
+Variant-gene/ontologies,biolink:is_sequence_variant_of,explicit predicate
+VARIANT_IS_CLINICALLY_RELEVANT,biolink:is_sequence_variant_of,explicit predicate
+variant_of,biolink:is_sequence_variant_of,explicit predicate

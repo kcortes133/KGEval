@@ -1,0 +1,131 @@
+original,biolink_mapping,rule
+Activity,biolink:Activity,node type
+Agent,biolink:Agent,node type
+Analytical Sample,biolink:MaterialSample,node type
+Anatomy/ Anatomical regions/ Anatomical Structure,biolink:AnatomicalEntity,node type
+Anatomical Entity,biolink:AnatomicalEntity,node type
+Anatomy Cell Type,biolink:Cell,node type
+Antibody,biolink:Protein,node type
+Antibody Panel,,unresolved
+Behavior,biolink:BehavioralFeature,node type
+Behavioral Feature,biolink:BehavioralFeature,node type
+Biological Activity,biolink:Activity,node type
+Biological Entity,biolink:NamedThing,node type
+Biological Processes,biolink:BiologicalProcess,node type
+Biological Sample,biolink:MaterialSample,node type
+Biomarker,biolink:PhenotypicFeature,node type
+Catalysts,biolink:ChemicalEntity,node type
+Cells,biolink:Cell,node type
+Cell Lines,biolink:Cell,node type
+Cell types,biolink:Cell,node type
+Cellular Components,biolink:CellularComponent,node type
+Cell Summary,biolink:Cell,node type
+Chemicals / Chemical Entity/ Drugs,biolink:ChemicalEntity,node type
+Chemical Mixture,biolink:ChemicalEntity,node type
+Chromosome,biolink:NucleicAcidEntity,node type
+Clinical Attribute,biolink:ClinicalAttribute,node type
+Clinical Intervention,biolink:ClinicalIntervention,node type
+Clinical Variable,biolink:ClinicalAttribute,node type
+Clinically Relevant Variable,biolink:ClinicalAttribute,node type
+Code,no_biolink_equivalent,internal label
+Cofactors,biolink:ChemicalEntity,node type
+Cohort,biolink:PopulationOfIndividualOrganisms,node type
+Collision Summary,biolink:Event,node type
+Complex,biolink:MacromolecularComplex,node type
+Compounds,biolink:ChemicalEntity,node type
+Concept,biolink:InformationContentEntity,node type
+Corridor,biolink:GeographicLocation,node type
+Dataset,biolink:Dataset,node type
+Definition,no_biolink_equivalent,internal label
+Devices,biolink:Device,node type
+Diseases,biolink:Disease,node type
+Domains,biolink:ProteinDomain,node type
+Donor,biolink:IndividualOrganism,node type
+Enhancer,biolink:RegulatoryRegion,node type
+Environmental Features,biolink:EnvironmentalFeature,node type
+Environmental Processes,biolink:EnvironmentalProcess,node type
+Enzymatic Activity,biolink:Activity,node type
+Epigenomic Features,,unresolved
+Event,biolink:Event,node type
+Exon,biolink:NucleicAcidEntity,node type
+Experiment,biolink:Study,node type
+Exposures,biolink:ExposureEvent,node type
+Extraction Site (Spatial Entity),biolink:AnatomicalEntity,node type
+Food,biolink:Food,node type
+FTU Illustration,biolink:InformationContentEntity,node type
+FTU Illustration Node,biolink:InformationContentEntity,node type
+Functional Regions,biolink:RegulatoryRegion,node type
+Genes,biolink:Gene,node type
+Gene Family,biolink:GeneFamily,node type
+Genomic Entity,biolink:GenomicEntity,node type
+Genotype,biolink:Genotype,node type
+Geographical Location,biolink:GeographicLocation,node type
+Gross Anatomical Structure,biolink:AnatomicalEntity,node type
+GWAS Study,biolink:Study,node type
+Information Content Entity,biolink:InformationContentEntity,node type
+Information Resource,biolink:InformationContentEntity,node type
+Insulator,biolink:RegulatoryRegion,node type
+Known Variant,biolink:SequenceVariant,node type
+Landmark,biolink:GeographicLocation,node type
+Life Stage,biolink:LifeStage,node type
+Macro Molecular Complex,biolink:MacromolecularComplex,node type
+Material Sample,biolink:MaterialSample,node type
+Metabolite,biolink:SmallMolecule,node type
+MicroRNA,biolink:NucleicAcidEntity,node type
+Millitome Extraction Site,biolink:AnatomicalEntity,node type
+Modification,,unresolved
+Modified Protein,biolink:Protein,node type
+Molecular Activity,biolink:Activity,node type
+Molecular Entity,biolink:NamedThing,node type
+Molecular Functions,biolink:Activity,node type
+Molecular Mixture,biolink:ChemicalMixture,node type
+Named Thing,biolink:NamedThing,node type
+Non Coding RNA Product,biolink:NucleicAcidEntity,node type
+Nucleic Acid Entity,biolink:NucleicAcidEntity,node type
+Nutrients,biolink:SmallMolecule,node type
+Organisms,biolink:OrganismalEntity,node type
+Organism Taxon,biolink:OrganismTaxon,node type
+Organismal Entity,biolink:OrganismalEntity,node type
+Pathalogical Processes,biolink:PathologicalProcess,node type
+Pathways,biolink:Pathway,node type
+Peptides,biolink:Polypeptide,node type
+Perturbagens,biolink:Drug,node type
+Pharmacologic Classes,biolink:ChemicalEntity,node type
+Phenomenon,biolink:Phenomenon,node type
+Phenotypes/ Effects/ Phenotypic Feature,biolink:PhenotypicFeature,node type
+Physical Entity,biolink:NamedThing,node type
+Physiological Processes,biolink:PhysiologicalProcess,node type
+Polypeptide,biolink:Polypeptide,node type
+Population of Individual Organisms,biolink:PopulationOfIndividualOrganisms,node type
+Procedure,biolink:ClinicalIntervention,node type
+Project,biolink:Study,node type
+Promoter,biolink:RegulatoryRegion,node type
+Proteins,biolink:Protein,node type
+Protein Domains,biolink:ProteinDomain,node type
+Protein Family,biolink:GeneFamily,node type
+Protein Structure,biolink:Protein,node type
+Publications,biolink:Publication,node type
+Reactions,biolink:BiologicalProcess,node type
+Reference Organ,biolink:AnatomicalEntity,node type
+Reference Organ Part,biolink:AnatomicalEntity,node type
+RNA Product,biolink:NucleicAcidEntity,node type
+Semantic,no_biolink_equivalent,internal label
+Sequences,biolink:NucleicAcidEntity,node type
+Sequence Variant,biolink:SequenceVariant,node type
+Side Effects,biolink:PhenotypicFeature,node type
+Small Molecules,biolink:SmallMolecule,node type
+Somatic Mutation,biolink:SequenceVariant,node type
+Subject,biolink:IndividualOrganism,node type
+Super Enhancer,biolink:RegulatoryRegion,node type
+Symptoms,biolink:PhenotypicFeature,node type
+Term,no_biolink_equivalent,internal label
+Tissues,biolink:AnatomicalEntity,node type
+Tssue Block (Sample),biolink:MaterialSample,node type
+Tissue Section (Sample),biolink:MaterialSample,node type
+Transcript,biolink:NucleicAcidEntity,node type
+Treatment,biolink:ClinicalIntervention,node type
+User,biolink:Agent,node type
+Vaccines,biolink:Drug,node type
+Variants,biolink:SequenceVariant,node type
+Vitamins,biolink:SmallMolecule,node type
+3D Structures,biolink:ProteinDomain,node type

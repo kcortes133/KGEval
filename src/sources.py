@@ -41,9 +41,9 @@ import pandas as pd
 # -----------------------------
 # File paths
 # -----------------------------
-# CSV listing all non-ontology data sources (one comma-separated list).
+# One-column CSV of non-ontology data sources.
 NON_ONTOLOGY_FILE = "../inputs/nonOntologySources.csv"
-# CSV listing all ontology data sources (one comma-separated list).
+# One-column CSV of ontology data sources.
 ONTOLOGY_FILE = "../inputs/ontologies.csv"
 # KG x source presence/absence matrix (rows = sources, columns = KGs).
 SOURCES_FILE = "../inputs/Sources.csv"
@@ -51,32 +51,16 @@ SOURCES_FILE = "../inputs/Sources.csv"
 # -----------------------------
 # Load source lists (FIXED)
 # -----------------------------
-def load_comma_separated_list(file):
-    """Read a single comma-separated list from a text/CSV file.
-
-    The ontology and non-ontology source files are stored as one long
-    comma-separated string (not row-per-source). This helper reads the
-    whole file, splits on commas, and strips whitespace from each entry,
-    skipping empty tokens.
-
-    Parameters
-    ----------
-    file : str
-        Path to the file containing the comma-separated list.
-
-    Returns
-    -------
-    list[str]
-        Cleaned list of source names.
-    """
-    with open(file, "r", encoding="utf-8") as f:
-        content = f.read()
-    return [x.strip() for x in content.split(",") if x.strip()]
+def load_source_list(file):
+    """Read a one-column CSV (header ``source``) of source names."""
+    return pd.read_csv(file)["source"].str.strip().tolist()
 
 # Reference vocabularies used to label each row of the KG x source matrix
 # as either "ontology" or "non-ontology".
-non_ontology_sources = load_comma_separated_list(NON_ONTOLOGY_FILE)
-ontology_sources = load_comma_separated_list(ONTOLOGY_FILE)
+non_ontology_sources = load_source_list(NON_ONTOLOGY_FILE)
+ontology_sources = load_source_list(ONTOLOGY_FILE)
+overlap = set(non_ontology_sources) & set(ontology_sources)
+assert not overlap, f"sources listed as both ontology and non-ontology: {overlap}"
 
 # -----------------------------
 # Load KG x source matrix
@@ -104,6 +88,12 @@ src_df[kg_columns] = (
 # the ontology / non-ontology lists behave correctly.
 src_df["source"] = src_df["source"].str.strip()
 
+# Every source in the matrix must be classified, or the per-KG totals would
+# silently undercount.
+unclassified = sorted(set(src_df["source"]) - set(ontology_sources) - set(non_ontology_sources))
+if unclassified:
+    raise SystemExit(f"Unclassified sources (add them to ontologies.csv or nonOntologySources.csv): {unclassified}")
+
 # -----------------------------
 # Split ontology vs non-ontology
 # -----------------------------
@@ -126,7 +116,7 @@ top10_ontology = (
 )
 
 top10_ontology.to_csv(
-    "top10_ontology_sources_by_kg.csv", index=False
+    "../outputs/top10_ontology_sources_by_kg.csv", index=False
 )
 
 # -----------------------------
@@ -143,7 +133,7 @@ top10_nonontology = (
 )
 
 top10_nonontology.to_csv(
-    "top10_nonontology_sources_by_kg.csv", index=False
+    "../outputs/top10_nonontology_sources_by_kg.csv", index=False
 )
 
 # -----------------------------
@@ -169,5 +159,5 @@ kg_counts["total_sources"] = (
 )
 
 kg_counts.to_csv(
-    "kg_source_counts.csv", index=False
+    "../outputs/kg_source_counts.csv", index=False
 )

@@ -2,34 +2,33 @@
 mappingstest.py
 ===============
 
-Schema-coverage heatmaps for biomedical knowledge graphs (KGs).
+Schema-coverage heatmaps for biomedical knowledge graphs (KGs)
+(manuscript Figures 3B and 4B).
 
 Each surveyed KG declares its own edge types and node types. To compare
-them on a common semantic backbone we map every native edge / node label
-onto a *Biolink Model* term (https://biolink.github.io/biolink-model/)
-using the mapping tables ``biolink_edge_mappings.csv`` and
-``biolink_node_mappings.csv``.
-
-This script produces two clustered heatmaps:
-
-    1. KG x Biolink **edge type**  coverage -> ``kg_biolink_edge_heatmap.svg``
-    2. KG x Biolink **node class** coverage -> ``kg_biolink_node_heatmap.svg``
-
-Columns (KGs) are clustered by Ward linkage so that KGs with similar
-schema coverage appear next to each other; rows (Biolink terms) keep
-their alphabetical order to make the heatmap easy to read.
+them on a common semantic backbone, every native label is mapped onto a
+Biolink Model 4.4.5 term by ``map_biolink.py`` (run it first).
 
 Inputs
 ------
-* ``Edge Types.csv``               - KG x native-edge-type presence matrix.
-* ``Node Types.csv``               - KG x native-node-type presence matrix.
-* ``biolink_edge_mappings.csv``    - native edge type -> Biolink predicate.
-* ``biolink_node_mappings.csv``    - native node type -> Biolink class.
+* ``inputs/Edge Types.csv``  - KG x native-edge-type presence matrix.
+* ``inputs/Node Types.csv``  - KG x native-node-type presence matrix.
+* ``outputs/edge_type_biolink_mapping.csv`` / ``node_type_biolink_mapping.csv``
+  - validated native label -> Biolink mapping from ``map_biolink.py``.
+
+Outputs
+-------
+* ``outputs/kg_node_type_counts.csv``, ``outputs/kg_edge_type_counts.csv``
+  - native node / edge types per KG (Figures 3A, 4A).
+* ``outputs/kg_biolink_{node,edge,combined}_matrix.csv`` - Biolink term x KG
+  counts of native labels.
+* ``figures/kg_biolink_{node,edge,schema}_heatmap.svg`` - clustered heatmaps.
+  Columns (KGs) are clustered by Ward linkage; rows stay alphabetical.
 
 Reference
 ---------
-Cortes et al., "Improving Biomedical Knowledge Graph Quality: A Community
-Approach," arXiv:2508.21774 (2025).
+Cortes et al., "Improving Biomedical Knowledge Graph Transparency and
+Reusability: A Community Approach." Preprint: arXiv:2508.21774 (2025).
 """
 
 import pandas as pd
@@ -123,84 +122,55 @@ def plot_heatmap(matrix, out_svg, ylabel):
     g.ax_heatmap.tick_params(axis="y", labelsize=16)
 
     plt.savefig(out_svg, format="svg", bbox_inches="tight")
-    plt.show()
+    plt.close("all")
 
 # -----------------------------
-# EDGE TYPE HEATMAP
+# Biolink-level matrices and heatmaps
 # -----------------------------
-# Native edge-type presence matrix (rows = native edge labels, cols = KGs).
-EDGE_TYPE_FILE = "../inputs/Edge Types.csv"
-# Lookup table mapping each native edge label onto a Biolink predicate.
-EDGE_MAP_FILE = "../inputs/biolink_edge_mappings.csv"
+# The native -> Biolink mapping is produced (and validated against Biolink
+# 4.4.5) by ``map_biolink.py``; run that first. Labels with no Biolink term
+# ("unresolved") or that are internal metadata ("no_biolink_equivalent") are
+# left out of the Biolink-level matrices.
+OUT, FIG = "../outputs", "../figures"
 
-edge_df, kg_columns = load_presence_matrix(EDGE_TYPE_FILE)
 
-# Load and tidy the native -> Biolink edge mapping.
-edge_map = pd.read_csv(EDGE_MAP_FILE)
-edge_map.columns = ["original", "biolink"]
-edge_map["original"] = edge_map["original"].str.strip()
+def biolink_matrix(type_file, map_file):
+    native, kgs = load_presence_matrix(type_file)
+    mapping = pd.read_csv(map_file, usecols=["original", "biolink_mapping"])
+    mapping.columns = ["original", "biolink"]
+    mapping["original"] = mapping["original"].str.strip()
+    mapped = native.merge(mapping, on="original", how="left")
+    mapped = mapped[mapped["biolink"].fillna("").str.startswith("biolink:")]
+    # Per (Biolink term, KG): number of native labels in that KG mapping to
+    # the term. Sum (not clip) keeps multi-mapping intensity.
+    return native, kgs, mapped.groupby("biolink")[kgs].sum().sort_index()
 
-# Attach the Biolink predicate to each row of the native presence matrix.
-# Rows that have no Biolink mapping are dropped from the figure.
-edge_mapped = (
-    edge_df
-    .merge(edge_map, on="original", how="left")
-    .dropna(subset=["biolink"])
-)
 
-# Aggregate to the Biolink level: per (Biolink predicate, KG), count how
-# many native edge labels in that KG map to the predicate. Sum (rather
-# than .clip(upper=1)) preserves multi-mapping intensity.
-edge_biolink = (
-    edge_mapped
-    .groupby("biolink")[kg_columns]
-    .sum()
-    #.clip(upper=1)
-    .sort_index()
-)
+edge_native, kg_columns, edge_biolink = biolink_matrix(
+    "../inputs/Edge Types.csv", f"{OUT}/edge_type_biolink_mapping.csv")
+node_native, _, node_biolink = biolink_matrix(
+    "../inputs/Node Types.csv", f"{OUT}/node_type_biolink_mapping.csv")
 
-plot_heatmap(
-    edge_biolink,
-    out_svg="kg_biolink_edge_heatmap.svg",
-    ylabel="Biolink Edge Type"
-)
+# Native type counts per KG (Figures 3A and 4A).
+pd.DataFrame({"KG": kg_columns, "node_types": node_native[kg_columns].sum().values}) \
+    .to_csv(f"{OUT}/kg_node_type_counts.csv", index=False)
+pd.DataFrame({"KG": kg_columns, "edge_types": edge_native[kg_columns].sum().values}) \
+    .to_csv(f"{OUT}/kg_edge_type_counts.csv", index=False)
 
-# -----------------------------
-# NODE TYPE HEATMAP
-# -----------------------------
-# Native node-type presence matrix.
-NODE_TYPE_FILE = "../inputs/Node Types.csv"
-# Lookup table mapping each native node label onto a Biolink class.
-NODE_MAP_FILE = "../inputs/biolink_node_mappings.csv"
+edge_biolink.to_csv(f"{OUT}/kg_biolink_edge_matrix.csv")
+node_biolink.to_csv(f"{OUT}/kg_biolink_node_matrix.csv")
+combined = pd.concat([node_biolink, edge_biolink])
+combined.to_csv(f"{OUT}/kg_biolink_combined_matrix.csv")
 
-node_df, _ = load_presence_matrix(NODE_TYPE_FILE)
+# KGs with no mapped labels (e.g. EmBiology, whose schema is paywalled) have
+# all-zero columns, which Ward linkage cannot cluster; leave them out.
+def nonzero(m):
+    # Also drop the CURIE prefix from row labels for readability.
+    return m.loc[:, m.sum() > 0].rename(index=lambda s: s.replace("biolink:", ""))
 
-# The node mapping CSV has more columns than we need - keep just the
-# native label and the Biolink class.
-node_map = pd.read_csv(NODE_MAP_FILE)[
-    ["Unstructured Label (Node-Type)", "Biolink Class"]
-]
-node_map.columns = ["original", "biolink"]
-node_map["original"] = node_map["original"].str.strip()
-
-# Same join + drop-unmapped pattern as the edge pipeline above.
-node_mapped = (
-    node_df
-    .merge(node_map, on="original", how="left")
-    .dropna(subset=["biolink"])
-)
-
-# Aggregate native node labels up to Biolink classes.
-node_biolink = (
-    node_mapped
-    .groupby("biolink")[kg_columns]
-    .sum()
-    #.clip(upper=1)
-    .sort_index()
-)
-
-plot_heatmap(
-    node_biolink,
-    out_svg="kg_biolink_node_heatmap.svg",
-    ylabel="Biolink Node Class"
-)
+plot_heatmap(nonzero(edge_biolink), out_svg=f"{FIG}/kg_biolink_edge_heatmap.svg",
+             ylabel="Biolink Edge Type")
+plot_heatmap(nonzero(node_biolink), out_svg=f"{FIG}/kg_biolink_node_heatmap.svg",
+             ylabel="Biolink Node Class")
+plot_heatmap(nonzero(combined), out_svg=f"{FIG}/kg_biolink_schema_heatmap.svg",
+             ylabel="Biolink Node Class / Edge Type")

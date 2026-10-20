@@ -58,10 +58,10 @@ from scipy.cluster.hierarchy import linkage, dendrogram
 # Load data
 # -----------------------------
 # Per-KG source counts produced by ``sources.py``.
-kg_sources = pd.read_csv("../data/kg_source_counts.csv")
+kg_sources = pd.read_csv("../outputs/kg_source_counts.csv")
 # Biolink edge-coverage matrix (rows = Biolink predicates, columns = KGs).
 biolink_edges = pd.read_csv(
-    "../data/kg_biolink_edge_matrix.csv",
+    "../outputs/kg_biolink_edge_matrix.csv",
     index_col=0
 )
 
@@ -170,11 +170,11 @@ ax3.set_xlabel("Distance")
 
 plt.tight_layout()
 plt.savefig(
-    "kg_source_semantics_multifigure.svg",
+    "../figures/kg_source_semantics_multifigure.svg",
     format="svg",
     bbox_inches="tight"
 )
-plt.show()
+plt.close("all")
 
 # =============================================================================
 # Pass 2: 6-panel figure (Panels A-F) -> kg_source_semantics_full.svg
@@ -193,8 +193,8 @@ from scipy.cluster.hierarchy import linkage, dendrogram
 # -----------------------------
 # Load data
 # -----------------------------
-kg_sources = pd.read_csv("../data/kg_source_counts.csv")
-biolink_edges = pd.read_csv("../data/kg_biolink_edge_matrix.csv", index_col=0)
+kg_sources = pd.read_csv("../outputs/kg_source_counts.csv")
+biolink_edges = pd.read_csv("../outputs/kg_biolink_edge_matrix.csv", index_col=0)
 
 # Normalize KG names: strip leading/trailing whitespace so the .map() call
 # below joins KG identifiers correctly between the two tables.
@@ -329,5 +329,5 @@ ax6.text(0.5, 0.5, "Node-type alignment panel\n(add later)", ha="center", va="ce
 ax6.set_axis_off()
 
 plt.tight_layout()
-plt.savefig("kg_source_semantics_full.svg", format="svg", bbox_inches="tight")
-plt.show()
+plt.savefig("../figures/kg_source_semantics_full.svg", format="svg", bbox_inches="tight")
+plt.close("all")

@@ -1,0 +1,29 @@
+Principle,Subcriterion,Description,Source,Notes
+A. Access Level and Type,A.1,"Additional KG product accessible (embeddings, paths)",New,No equivalent in dataset-level frameworks; derived products are a KG-specific concept
+,A.2,"API, Neo4j, or other hosted graph database accessible",Adapted — FAIR (A1); HCLS; Mohammadi et al. (2026),"FAIR A1 calls for retrieval via a standardized protocol; HCLS recommends void:sparqlEndpoint and Mohammadi et al. include SPARQL endpoint and REST API elements. We extend this to graph-native access (e.g., Neo4j)"
+,A.3,Multiple ways to download or access,Adapted — FAIR (A1); HCLS; Mohammadi et al. (2026),"HCLS dcat:accessURL/dcat:downloadURL and Mohammadi et al. ""distributions"" describe multiple access routes; we score whether more than one exists"
+,A.4,Source code for making the KG is publicly accessible,Adapted — O3 (open code),O3: version control and permissively license code
+,A.5,KG is downloadable in its entirety,Adapted — FAIR (A1.1); HCLS; Mohammadi et al. (2026),"HCLS dcat:downloadURL (distribution level) and Mohammadi et al. download URL; we require the full graph, not a subset"
+B. Provenance of Nodes and Edges,B.1,List of sources provided,Adapted — HCLS; Mohammadi et al. (2026),HCLS dct:source / prov:wasDerivedFrom (source datasets); Mohammadi et al. primary source and references
+,B.2,Sources have versions/dates/file names used,Adapted — HCLS; FAIR (R1.2),"HCLS pav:retrievedFrom and source-dataset versions support this; we require versions, dates or file names for every source. Mohammadi et al. record sources but not their versions"
+,B.3,Import dependencies declared,Adapted — HCLS (pav:createdWith); O3,"HCLS pav:createdWith records software used to create a dataset; O3 recommends maintainer-friendly, reproducible code. We require declared import dependencies"
+,B.4,Nodes and edges have source information,Adapted — FAIR (R1.2),"FAIR R1.2 calls for detailed provenance; HCLS and Mohammadi et al. record provenance only at the dataset level, so node- and edge-level source attribution is our extension"
+,B.5,Duplicate edge management taken into consideration,New,Edge-level construct with no equivalent in flat-dataset schemas
+,B.6,Provenance of edge creation,New,Edge-level provenance of how each relationship is generated; no equivalent in dataset-level schemas
+,B.7,Schema for how edge types are created; where they are coming from,New,Edge-type derivation rules; dataset-level schemas record vocabularies used but not how edge types are created
+"C. Documented Standards, Schema, and Construction",C.1,Entities/nodes human-readable and usable outside the KG,"Adapted — FAIR (R1, R1.3)",FAIR R1 (richly described with relevant attributes) and R1.3 (domain-relevant community standards)
+,C.2,Identifiers support entity resolution,"Adapted — FAIR (F1, I3); HCLS; Mohammadi et al. (2026)",HCLS idot:preferredPrefix / idot:identifierPattern; Mohammadi et al. namespace and IRI template
+,C.3,Documentation on construction provided,New,Process-level transparency beyond what metadata schemas specify; HCLS foaf:page and Mohammadi et al. home page link to general documentation but do not require construction documentation
+,C.4,Documented data transforms,New,No metadata element records data transforms applied during construction
+,C.5,Uses a documented schema for construction,Adapted — HCLS; Mohammadi et al. (2026); FAIR (I2),"HCLS dct:conformsTo and void:vocabulary; Mohammadi et al. vocabulary, conforms to and meta graph"
+D. Update Frequency and Versioning,D.1,Clearly identified stable versions,Adapted — HCLS; Mohammadi et al. (2026),HCLS pav:version (required at version level); Mohammadi et al. version element
+,D.2,Public tracker for requests,Adapted — O3 (social workflows),O3 recommends public issue trackers and searchable discussion channels rather than private email; also an OBO Foundry principle (responsiveness)
+,D.3,Contact indicated (organization or person),Adapted — HCLS; Mohammadi et al. (2026); TRUST (User focus),"HCLS dct:publisher (required); Mohammadi et al. publisher/creator with role, name and email"
+,D.4,Updated more than once per year,Adapted — HCLS (dct:accrualPeriodicity),HCLS recommends recording update frequency; the threshold of more than one update per year is new to this framework (Bonner et al. 2022 also identified irregular updates as a gap)
+,D.5,Prior versions accessible with documented changes,Adapted — HCLS (pav:previousVersion); TRUST (Sustainability),HCLS pav:previousVersion links versions; TRUST Sustainability covers continued access to holdings. Documented changes between versions are our addition
+E. Evaluation by Metrics and Fitness for Purpose,E.1,Case study/example of use provided,New,"Mohammadi et al. include sample queries and example resources, but not a use case or case study"
+,E.2,KG utility evaluated against other methods,New,"Assesses whether evaluation is reported, not the content-accuracy assessment itself (contrast Wang et al. 2021; Xue & Zou 2023)"
+,E.3,Clearly defined scope,Adapted — TRUST (Transparency); HCLS; Mohammadi et al. (2026),TRUST Transparency asks repositories to state their mission and scope; HCLS dct:description and Mohammadi et al. description/theme describe content. We require an explicit statement of intended scope
+,E.4,Multiple types of evaluation methods,New,"Reporting-level; distinct from Wang et al. (2021) and Xue & Zou (2023), who directly assess content quality"
+,E.5,One or more ways of measuring accuracy/confidence,New,"Reporting-level; distinct from Wang et al./Xue & Zou, who directly measure accuracy"
+F. Licensing,F.1,"KG licensing status (specific open license, proprietary/subscription-based, or unclear/not stated)",Adapted — FAIR (R1.1); HCLS; Mohammadi et al. (2026); O3,"FAIR R1.1, HCLS dct:license, Mohammadi et al. license, O3 permissive licensing. Recorded as a licensing category rather than yes/no"
